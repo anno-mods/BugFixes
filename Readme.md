@@ -6,7 +6,9 @@ I would organize it in this way:
 Dividing it like this because graphic fixes might get very big in filesize (of course this mod also includes necessary xml changes to fix the graphics). So the graphic package will publish an update after modders added new fixes to it more seldom, to keep the downloadtraffic low. While the xml bugfix mod can be updated more often.
 
 I think it is fine to include translation fixes within the XML bugfix mod, or do you think we should separate it?
+
 If you are not sure if your mod is a "Fix" or "personal taste", we can discuss at discord if we should include it or not.
+
 If your fix has negative consequences that not every user would like to accept (eg. it is more a workaround, not a real fix), you should make it a separate mod, so users can decide if they want it or not.
 
 ### How to contribute:
