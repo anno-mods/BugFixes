@@ -13,7 +13,7 @@ I think it is fine to include translation fixes within the XML bugfix mod, or do
 - Or add your code/files as a submod: Simply create a normal mod, but name the folder a bit different, so users will notice that it is not a normal mod they need to handle, like eg "submod_bugfix_ABC_Serp". A submod is the better choice if you dont want to mix your work with others and if you also published a standalone version of your bugfix (then use the same ModID for both) so the game only loads one of it, if a user has both installed.
 
 Please make sure to write your code as compatible as possible, eg. when you add a guid to a pool use a Condition to check if it is not already there:
-```json
+```xml
 <ModOp Type="add" GUID='1404' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
   Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='720']">
   <Item>
