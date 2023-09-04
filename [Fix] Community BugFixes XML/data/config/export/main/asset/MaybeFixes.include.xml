@@ -1,0 +1,54 @@
+<ModOps>
+    
+  <!-- I include assets.xml fixes here, if I'm not 100% if this is needed or not. We can discuss about them -->
+    
+    
+  <!-- From Combat Overhaul Mod from Ac3s -->
+  <!-- prevent AI ships from getting stuck at arctis shore trying to attack these buildings --> 
+  <!-- original = HarbourBuilding  -->
+  <!-- Only downsight is, that AI will not be able to attack this building anymore, even with airships -->
+  <!-- But on the other hand: "Ais can overtake arctic airplatue islands (with bombs), while players can not" is another existing bugreport. -->
+  <!-- although is there then no way to takeover an arctic airplatue? -->
+  <!-- Small,Medium,Large Sky Trading Post -->
+  <ModOp Type="merge" GUID="112726,116003,116004" Path="/Values/Attackable">
+      <AttackableType>IslandBuilding</AttackableType> 
+  </ModOp>
+  
+  
+  
+   <!-- add arctic kontors to 193897 "All kontors and piers" -->
+   <!-- Maybe it might be better to add them instead to GUID 190797 ? Or why should arctic kontors be excluded?  -->
+   <ModOp Type="add" GUID='193897' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+    Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='112659']">
+      <Item>
+        <GUID>112659</GUID>
+      </Item>
+      <Item>
+        <GUID>112660</GUID>
+      </Item>
+      <Item>
+        <GUID>112661</GUID>
+      </Item>
+      <Item>
+        <GUID>112865</GUID>
+      </Item>
+      <Item>
+        <GUID>112866</GUID>
+      </Item>
+      <Item>
+        <GUID>112867</GUID>
+      </Item>
+      <Item>
+        <GUID>112726</GUID>
+      </Item>
+      <Item>
+        <GUID>116003</GUID>
+      </Item>
+      <Item>
+        <GUID>116004</GUID>
+      </Item>
+    </ModOp>
+  
+  
+
+</ModOps>

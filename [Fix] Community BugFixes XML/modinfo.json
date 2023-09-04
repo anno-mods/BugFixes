@@ -1,0 +1,25 @@
+{
+  "Version": "1.0",
+  "ModID": "BugFixes_XML_Community",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "LoadAfterIds": null,
+  "Category": {
+    "English": "BugFix"
+  },
+  "ModName": {
+    "English": "Community BugFixes XML"
+  },
+  "Description": {
+    "English": "BugFixes with simply XML modification."
+  },
+  "KnownIssues": [
+    {
+      "English": null
+    }
+  ],
+  "DLCDependencies": null,
+  "CreatorName": "Serp,",
+  "CreatorContact": "https://github.com/anno-mods/BugFixes",
+  "ModioResourceId" : null
+}

@@ -1,0 +1,57 @@
+<ModOps>
+    
+
+    <!-- Adding GUIDs to various pools they should belong to -->
+
+  
+  
+    <!-- Missing Unlocks from some goods (adding them to the same AssetPool as their factory) -->
+    <!-- Jalea -->
+    <ModOp Type="add" GUID='5802' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='5381']">
+      <Item>
+        <Asset>5381</Asset>
+      </Item>
+    </ModOp>
+    
+
+    <!-- adding Oil Refinery to the pool buildings with maintenances: -->
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='101331']">
+      <Item>
+        <GUID>101331</GUID>
+      </Item>
+    </ModOp>
+   
+    <!-- Add arctic canon gun to the "all military buildings" effectpool -->
+    <ModOp Type="add" GUID='191443' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='112671']">
+      <Item>
+        <GUID>112671</GUID>
+      </Item>
+    </ModOp>
+    
+    <!-- Add flagship to All Wooden-Hulled Ships 1398, so it is automatically also included in all ships for combat effects 1512 -->
+    <ModOp Type="add" GUID='1398' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='101121']">
+      <Item>
+        <GUID>101121</GUID>
+      </Item>
+    </ModOp>
+    
+    <!-- FlakMonitor to All Metal-Hulled Ships -->
+    <ModOp Type="add" GUID='1404' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='720']">
+      <Item>
+        <GUID>720</GUID>
+      </Item>
+    </ModOp>
+
+   
+    
+    
+    <!-- not sure if adding all quest related ships also to the "combat effects" pool is a bugfix... -->
+    <!-- I think it is better to not add them, only if we need it for a mod, see AI Buffed GeneralEnemy (Serp) Mod -->
+    
+
+</ModOps>

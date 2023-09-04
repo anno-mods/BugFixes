@@ -1,0 +1,25 @@
+{
+  "Version": "1.0",
+  "ModID": "BugFixes_Graphics_Community",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "LoadAfterIds": null,
+  "Category": {
+    "English": "BugFix"
+  },
+  "ModName": {
+    "English": "Community BugFixes Graphics"
+  },
+  "Description": {
+    "English": "BugFixes for Graphics"
+  },
+  "KnownIssues": [
+    {
+      "English": null
+    }
+  ],
+  "DLCDependencies": null,
+  "CreatorName": "",
+  "CreatorContact": "https://github.com/anno-mods/BugFixes",
+  "ModioResourceId" : null
+}

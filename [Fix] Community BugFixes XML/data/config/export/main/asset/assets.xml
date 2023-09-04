@@ -1,0 +1,88 @@
+<ModOps>
+    
+    <!-- I include assets.xml fixes there, if I'm not 100% sure if this is needed or not. We can discuss about them -->
+    <Include File="./MaybeFixes.include.xml" />
+    
+    <!-- Adding GUIDs to various pools they should belong to -->
+    <Include File="./Pools.include.xml" />
+
+  
+    
+    
+    <!-- Aluminium Fix for Sarmento (not offerend in EndGame, but before) -->
+    <!-- ProductionPerMinute in LateGame is 4, that is why I chose 5 in EndGame -->
+    <ModOp Type='add' GUID='29' Path='/Values/Trader/Progression/EndGame/OfferingGoods/Item[1]/GoodSets' 
+        Condition="!/Values/Trader/Progression/EndGame/OfferingGoods/Item[1]/GoodSets/Item[Good='838']">
+       <Item>
+        <Good>838</Good>
+       </Item>
+    </ModOp>
+    <ModOp Type='replace' GUID='29' 
+      Condition='/Values/Trader/Progression/EndGame/GoodsProduction/Item[Good="838"]'
+      Path='/Values/Trader/Progression/EndGame/GoodsProduction/Item[Good="838"]/ProductionPerMinute'>
+        <ProductionPerMinute>5</ProductionPerMinute>
+    </ModOp>
+    <ModOp Type='add' GUID='29' Path='/Values/Trader/Progression/EndGame/GoodsProduction'
+      Condition="!/Values/Trader/Progression/EndGame/GoodsProduction/Item[Good='838']">
+        <Item>
+          <Good>838</Good>
+          <ProductionPerMinute>5</ProductionPerMinute>
+        </Item>
+    </ModOp>
+    
+    
+    <!-- Bauxit Fix for Archibald (not offerend in EndGame, but before) -->
+    <!-- ProductionPerMinute in LateGame is 2, that is why I chose 3 in EndGame -->
+    <ModOp Type='add' GUID='45' Path='/Values/Trader/Progression/EndGame/OfferingGoods/Item[1]/GoodSets' 
+        Condition="!/Values/Trader/Progression/EndGame/OfferingGoods/Item[1]/GoodSets/Item[Good='836']">
+       <Item>
+        <Good>836</Good>
+       </Item>
+    </ModOp>
+    <ModOp Type='replace' GUID='45' 
+      Condition='/Values/Trader/Progression/EndGame/GoodsProduction/Item[Good="836"]'
+      Path='/Values/Trader/Progression/EndGame/GoodsProduction/Item[Good="836"]/ProductionPerMinute'>
+        <ProductionPerMinute>3</ProductionPerMinute>
+    </ModOp>
+    <ModOp Type='add' GUID='45' Path='/Values/Trader/Progression/EndGame/GoodsProduction'
+      Condition="!/Values/Trader/Progression/EndGame/GoodsProduction/Item[Good='836']">
+        <Item>
+          <Good>836</Good>
+          <ProductionPerMinute>3</ProductionPerMinute>
+        </Item>
+    </ModOp>
+   
+   
+   
+    
+    <!-- by "xn-d", vanilla uses flamethrower sound currently for armor piercing gun -->
+    <!-- Use for Launch: harbor gun sound -->
+	  <!-- Use for Impact: big betty explosion sound -->
+    <!-- add empty tables first, if there are non yet, so we can use replace below -->
+    <ModOp Type="merge" GUID='3702' Path="/Values">
+      <SoundEmitter>
+        <ProjectileSounds>
+          <ProjectileLaunch />
+          <ProjectileImpact />
+        </ProjectileSounds>
+      </SoundEmitter>
+    </ModOp>
+    <ModOp Type="replace" GUID='3702' Path="/Values/SoundEmitter/ProjectileSounds/ProjectileLaunch">
+      <ProjectileLaunch>
+        <Item>
+          <Sound>235853</Sound>
+        </Item>
+      </ProjectileLaunch>
+    </ModOp>
+    <ModOp Type="replace" GUID='3702' Path="/Values/SoundEmitter/ProjectileSounds/ProjectileImpact">
+      <ProjectileImpact>
+        <Item>
+          <Sound>235844</Sound> 
+        </Item>
+      </ProjectileImpact>
+    </ModOp>
+    
+    
+
+
+</ModOps>
