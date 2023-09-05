@@ -1,17 +1,17 @@
 {
   "Version": "1.0",
-  "ModID": "BugFixes_XML_Community",
+  "ModID": "Community_Patch_big",
   "IncompatibleIds": null,
   "ModDependencies": null,
   "LoadAfterIds": null,
   "Category": {
-    "English": "BugFix"
+    "English": "Patch"
   },
   "ModName": {
-    "English": "Community BugFixes XML"
+    "English": "Community Patch Big"
   },
   "Description": {
-    "English": "BugFixes with simply XML modification."
+    "English": "Patches with big files sizes modifications"
   },
   "KnownIssues": [
     {
@@ -19,7 +19,7 @@
     }
   ],
   "DLCDependencies": null,
-  "CreatorName": "Serp,",
+  "CreatorName": "",
   "CreatorContact": "https://github.com/anno-mods/BugFixes",
   "ModioResourceId" : null
 }

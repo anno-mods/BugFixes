@@ -15,12 +15,7 @@
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '269879']/Text">
       <Text>Riesiges Imperiales Kontor</Text>
     </ModOp>
-    
-    <!-- original: <Text>Bauern-​Arbeitskaft</Text> -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
-      <Text>Bauern-​Arbeitskraft</Text>
-    </ModOp>
-    
+
     
 </ModOps>
 

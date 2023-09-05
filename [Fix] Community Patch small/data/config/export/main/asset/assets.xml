@@ -1,8 +1,6 @@
 <ModOps>
     
-    <!-- I include assets.xml fixes there, if I'm not 100% sure if this is needed or not. We can discuss about them -->
-    <Include File="./MaybeFixes.include.xml" />
-    
+
     <!-- Adding GUIDs to various pools they should belong to -->
     <Include File="./Pools.include.xml" />
 
