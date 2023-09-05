@@ -1,5 +1,8 @@
 ### A collection of bugfixes
 
+THIS is still WIP! Renaming and Restructure will for sure happen and is open for discussion at discord!
+But you can already contribute.
+
 I would organize it in this way:
 1) One mod for "small in file size" fixes.
 2) One package of fixes for bigger files, like graphics.
