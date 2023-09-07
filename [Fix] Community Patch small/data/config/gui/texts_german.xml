@@ -6,6 +6,16 @@
       <Text>Bauern-​Arbeitskraft</Text>
     </ModOp>
     
+    <!-- TODO: check if other languages also miss this translation -->
+    <!-- translate the pool, original: "all Ships" new: "Alle Schiffe" -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='1512']/Text">
+        <Text>[AssetData(191454) Text]</Text>
+    </ModOp>
+    <!-- translate the pool, original: "All Trade Airships" new: "Alle unbewaffneten Luftschiffe" -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='7087']/Text">
+        <Text>[AssetData(4147) Text]</Text>
+    </ModOp>
+    
     
 </ModOps>
 
