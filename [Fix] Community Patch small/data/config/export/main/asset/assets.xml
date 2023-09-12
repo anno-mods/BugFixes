@@ -81,6 +81,16 @@
     </ModOp>
     
     
+    <!-- ############################################################ -->
+    <!-- QUESTS -->
+    <!-- ############################################################ -->
+    
+    <!-- There are several deliver quests from Ketema that asks you to send him goods with value of 100k and more, to get like 10k as reward... -->
+    <!-- (this is more of a bugfix I think, cause other questgivers already have money amount=3 already defined for expensive deliver quests like this) -->
+    <ModOp Type="merge" GUID="119041,119040,119038,119042,119043,119044" Path="/Values/Reward/RewardAssets/Item[1]">
+      <Amount>3</Amount>
+    </ModOp>
+    
 
 
 </ModOps>
