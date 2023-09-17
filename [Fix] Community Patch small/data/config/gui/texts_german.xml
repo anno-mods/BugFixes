@@ -17,5 +17,18 @@
     </ModOp>
     
     
+    <!-- more precise naming of pools: -->
+    <!-- vanilla: Alle Kontore -->
+    <!-- unfortunately the "regions", like "Moderate" dont exist as ingame text and instead it is always called "Old World" which includes the Cape-session. So we will stick to this. -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191297']/Text[not(contains(.,'[AssetData(130881) Text]'))]"
+      Content="/TextExport/Texts/Text[GUID = '191297']/Text/text()">
+      <Text><ModOpContent /> [AssetData(130881) Text]</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191298']/Text[not(contains(.,'[AssetData(130893) Text]'))]"
+      Content="/TextExport/Texts/Text[GUID = '191298']/Text/text()">
+      <Text><ModOpContent /> [AssetData(130893) Text]</Text>
+    </ModOp>
+    
+    
 </ModOps>
 

@@ -81,6 +81,11 @@
     </ModOp>
     
     
+    <!-- from Ac3s, vanilla has normal crossing street 117786 here -->
+    <ModOp Type="merge" GUID="141032" Path="/Values/GlobalConstructionAIBalancing/RegionStreets/Africa">
+      <Crossing_Pipe_StreetFast>127913</Crossing_Pipe_StreetFast>
+    </ModOp>
+    
     <!-- ############################################################ -->
     <!-- QUESTS -->
     <!-- ############################################################ -->
