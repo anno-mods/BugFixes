@@ -1,12 +1,14 @@
 <ModOps>
+  
+    <!-- TODO add for other languages -->
 
+  
         
-    <!-- original: <Text>Bauern-​Arbeitskaft</Text> -->
+    <!-- fix typo in german language: original: <Text>Bauern-​Arbeitskaft</Text> -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
       <Text>Bauern-​Arbeitskraft</Text>
     </ModOp>
     
-    <!-- TODO: check if other languages also miss this translation -->
     <!-- translate the pool, original: "all Ships" new: "Alle Schiffe" -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='1512']/Text">
         <Text>[AssetData(191454) Text]</Text>
@@ -16,17 +18,44 @@
         <Text>[AssetData(4147) Text]</Text>
     </ModOp>
     
+    <!-- translate/replace playercounter pools... original: Context Pool All Farmer Products -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700052']/Text">
+      <Text>Bauern Waren</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700053']/Text">
+      <Text>Arbeiter Waren</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700054']/Text">
+      <Text>Handwerker Waren</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700139']/Text">
+      <Text>Ingenieurs Waren</Text>
+    </ModOp>
+    
+    <!-- clarify that the region, not the session is ment (in vanilla they are named the same -.-) -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000000']/Text">
+      <Text>Europa (Region)</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000001']/Text">
+      <Text>Südamerika (Region)</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '160001']/Text">
+      <Text>Arktis (Region)</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '114327']/Text">
+      <Text>Afrika (Region)</Text>
+    </ModOp>
+    
     
     <!-- more precise naming of pools: -->
     <!-- vanilla: Alle Kontore -->
-    <!-- unfortunately the "regions", like "Moderate" dont exist as ingame text and instead it is always called "Old World" which includes the Cape-session. So we will stick to this. -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191297']/Text[not(contains(.,'[AssetData(130881) Text]'))]"
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191297']/Text[not(contains(.,'[AssetData(5000000) Text]'))]"
       Content="/TextExport/Texts/Text[GUID = '191297']/Text/text()">
-      <Text><ModOpContent /> [AssetData(130881) Text]</Text>
+      <Text><ModOpContent /> [AssetData(5000000) Text]</Text>
     </ModOp>
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191298']/Text[not(contains(.,'[AssetData(130893) Text]'))]"
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191298']/Text[not(contains(.,'[AssetData(5000001) Text]'))]"
       Content="/TextExport/Texts/Text[GUID = '191298']/Text/text()">
-      <Text><ModOpContent /> [AssetData(130893) Text]</Text>
+      <Text><ModOpContent /> [AssetData(5000001) Text]</Text>
     </ModOp>
     
     

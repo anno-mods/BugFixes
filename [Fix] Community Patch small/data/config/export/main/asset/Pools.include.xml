@@ -47,7 +47,469 @@
       </Item>
     </ModOp>
 
-   
+
+
+    <!-- following is missing in vanilla WorkforceGoods ProductLists:   -->
+    <!-- Bauern ['1010200'] -->
+    <!-- Jornaleros ['850', '5394', '1414', '847', '1010196', '848', '1010226', '846', '24808', '5380', '1010256', '836', '5384', '120008', '1010227', '849', '5386', '5383', '5803'] -->
+    <!-- Entdecker [] -->
+    <!-- Arbeiter ['850', '848', '849', '135229', '135230', '846', '134623', '847'] -->
+    <!-- Obreros ['5393', '1010219', '135150', '838', '135186', '5392', '5390', '1010239', '840', '5398', '1010242', '135130'] -->
+    <!-- Hirten ['114369', '114370', '118728', '114368'] -->
+    <!-- Handwerker ['135233', '135234', '135231', '135232'] -->
+    <!-- Artistas ['1010206'] -->
+    <!-- Ingenieure ['135129', '1010257', '1010240', '120032', '1010249'] -->
+    <!-- Techniker [] -->
+    <!-- Älteste [] -->
+    
+    <!-- add Fish 1010200 to products list FarmerWorkforceGoods 502004 -->
+    <ModOp Type = "add" GUID = '502004' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010200']">
+      <Item>
+        <Product>1010200</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- add Elevators 134623 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='134623']">
+      <Item>
+        <Product>134623</Product>
+      </Item>
+    </ModOp>
+    <!-- add 850 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='850']">
+      <Item>
+        <Product>850</Product>
+      </Item>
+    </ModOp>
+    <!-- add 848 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='848']">
+      <Item>
+        <Product>848</Product>
+      </Item>
+    </ModOp>
+    <!-- add 849 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='849']">
+      <Item>
+        <Product>849</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135229 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135229']">
+      <Item>
+        <Product>135229</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135230 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135230']">
+      <Item>
+        <Product>135230</Product>
+      </Item>
+    </ModOp>
+    <!-- add 846 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='846']">
+      <Item>
+        <Product>846</Product>
+      </Item>
+    </ModOp>
+    <!-- add 847 to products list WorkerWorkforceGoods 502005 -->
+    <ModOp Type = "add" GUID = '502005' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='847']">
+      <Item>
+        <Product>847</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- add 135233 to products list ArtisanWorkforceGoods 502006 -->
+    <ModOp Type = "add" GUID = '502006' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135233']">
+      <Item>
+        <Product>135233</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135234 to products list ArtisanWorkforceGoods 502006 -->
+    <ModOp Type = "add" GUID = '502006' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135234']">
+      <Item>
+        <Product>135234</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135231 to products list ArtisanWorkforceGoods 502006 -->
+    <ModOp Type = "add" GUID = '502006' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135231']">
+      <Item>
+        <Product>135231</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135232 to products list ArtisanWorkforceGoods 502006 -->
+    <ModOp Type = "add" GUID = '502006' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135232']">
+      <Item>
+        <Product>135232</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- add Gold 1010249 to products list EngineerWorkforceGoods 502007 -->
+    <ModOp Type = "add" GUID = '502007' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010249']">
+      <Item>
+        <Product>1010249</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135129 to products list EngineerWorkforceGoods 502007 -->
+    <ModOp Type = "add" GUID = '502007' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135129']">
+      <Item>
+        <Product>135129</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010257 to products list EngineerWorkforceGoods 502007 -->
+    <ModOp Type = "add" GUID = '502007' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010257']">
+      <Item>
+        <Product>1010257</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010240 to products list EngineerWorkforceGoods 502007 -->
+    <ModOp Type = "add" GUID = '502007' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010240']">
+      <Item>
+        <Product>1010240</Product>
+      </Item>
+    </ModOp>
+    <!-- add 120032 to products list EngineerWorkforceGoods 502007 -->
+    <ModOp Type = "add" GUID = '502007' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='120032']">
+      <Item>
+        <Product>120032</Product>
+      </Item>
+    </ModOp>
+
+    <!-- add 850 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='850']">
+      <Item>
+        <Product>850</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5394 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5394']">
+      <Item>
+        <Product>5394</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1414 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1414']">
+      <Item>
+        <Product>1414</Product>
+      </Item>
+    </ModOp>
+    <!-- add 847 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='847']">
+      <Item>
+        <Product>847</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010196 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010196']">
+      <Item>
+        <Product>1010196</Product>
+      </Item>
+    </ModOp>
+    <!-- add 848 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='848']">
+      <Item>
+        <Product>848</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010226 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010226']">
+      <Item>
+        <Product>1010226</Product>
+      </Item>
+    </ModOp>
+    <!-- add 846 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='846']">
+      <Item>
+        <Product>846</Product>
+      </Item>
+    </ModOp>
+    <!-- add 24808 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='24808']">
+      <Item>
+        <Product>24808</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5380 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5380']">
+      <Item>
+        <Product>5380</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010256 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010256']">
+      <Item>
+        <Product>1010256</Product>
+      </Item>
+    </ModOp>
+    <!-- add 836 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='836']">
+      <Item>
+        <Product>836</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5384 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5384']">
+      <Item>
+        <Product>5384</Product>
+      </Item>
+    </ModOp>
+    <!-- add 120008 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='120008']">
+      <Item>
+        <Product>120008</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010227 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010227']">
+      <Item>
+        <Product>1010227</Product>
+      </Item>
+    </ModOp>
+    <!-- add 849 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='849']">
+      <Item>
+        <Product>849</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5386 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5386']">
+      <Item>
+        <Product>5386</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5383 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5383']">
+      <Item>
+        <Product>5383</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5803 to products list JornaleroWorkforceGoods 502008 -->
+    <ModOp Type = "add" GUID = '502008' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5803']">
+      <Item>
+        <Product>5803</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- add Sugar 1010239 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010239']">
+      <Item>
+        <Product>1010239</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5393 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5393']">
+      <Item>
+        <Product>5393</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5393 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5393']">
+      <Item>
+        <Product>5393</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010219 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010219']">
+      <Item>
+        <Product>1010219</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135150 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135150']">
+      <Item>
+        <Product>135150</Product>
+      </Item>
+    </ModOp>
+    <!-- add 838 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='838']">
+      <Item>
+        <Product>838</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135186 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135186']">
+      <Item>
+        <Product>135186</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5392 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5392']">
+      <Item>
+        <Product>5392</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5390 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5390']">
+      <Item>
+        <Product>5390</Product>
+      </Item>
+    </ModOp>
+    <!-- add 840 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='840']">
+      <Item>
+        <Product>840</Product>
+      </Item>
+    </ModOp>
+    <!-- add 5398 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='5398']">
+      <Item>
+        <Product>5398</Product>
+      </Item>
+    </ModOp>
+    <!-- add 1010242 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010242']">
+      <Item>
+        <Product>1010242</Product>
+      </Item>
+    </ModOp>
+    <!-- add 135130 to products list ObreroWorkforceGoods 502009 -->
+    <ModOp Type = "add" GUID = '502009' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='135130']">
+      <Item>
+        <Product>135130</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- add Sewing 1010206 to products list ArtistaWorkforceList 5402 -->
+    <ModOp Type = "add" GUID = '5402' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='1010206']">
+      <Item>
+        <Product>1010206</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- add 114369 to products list ShepherdWorkforceGoods 502069 -->
+    <ModOp Type = "add" GUID = '502069' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='114369']">
+      <Item>
+        <Product>114369</Product>
+      </Item>
+    </ModOp>
+    <!-- add 114370 to products list ShepherdWorkforceGoods 502069 -->
+    <ModOp Type = "add" GUID = '502069' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='114370']">
+      <Item>
+        <Product>114370</Product>
+      </Item>
+    </ModOp>
+    <!-- add 118728 to products list ShepherdWorkforceGoods 502069 -->
+    <ModOp Type = "add" GUID = '502069' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='118728']">
+      <Item>
+        <Product>118728</Product>
+      </Item>
+    </ModOp>
+    <!-- add 114368 to products list ShepherdWorkforceGoods 502069 -->
+    <ModOp Type = "add" GUID = '502069' Path = "/Values/ProductList/List"
+      Condition="!/Values/ProductList/List/Item[Product='114368']">
+      <Item>
+        <Product>114368</Product>
+      </Item>
+    </ModOp>
+    
+    
+  
+    
+    <!-- Also add all goods produced by this population to the 4 PlayerCounter pools, cause I think this is intended, even for products this population does not use -->
+    <!-- add Jam 133183 to pool CP All Farmer Products 700052 -->
+    <ModOp Type = "add" GUID = '700052' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='133183']">
+      <Item>
+        <Asset>133183</Asset>
+      </Item>
+    </ModOp>
+    <!-- add Leather Boots 114428 to pool CP All Artisans Products 700054 -->
+    <ModOp Type = "add" GUID = '700054' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='114428']">
+      <Item>
+        <Asset>114428</Asset>
+      </Item>
+    </ModOp>
+    <!-- add Tailored Suits 114430 to pool CP All Artisans Products 700054 -->
+    <ModOp Type = "add" GUID = '700054' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='114430']">
+      <Item>
+        <Asset>114430</Asset>
+      </Item>
+    </ModOp>
+    <!-- add Shampoo 133181 to pool CP All Engineer Products 700139 -->
+    <ModOp Type = "add" GUID = '700139' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='133181']">
+      <Item>
+        <Asset>133181</Asset>
+      </Item>
+    </ModOp>
+    <!-- add Lemonade 133185 to pool CP All Engineer Products 700139 -->
+    <ModOp Type = "add" GUID = '700139' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='133185']">
+      <Item>
+        <Asset>133185</Asset>
+      </Item>
+    </ModOp>
+    <!-- add Souvenirs 133532 to pool CP All Engineer Products 700139 -->
+    <ModOp Type = "add" GUID = '700139' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='133532']">
+      <Item>
+        <Asset>133532</Asset>
+      </Item>
+    </ModOp>
+    <!-- add Telephones 114431 to pool CP All Engineer Products 700139 -->
+    <ModOp Type = "add" GUID = '700139' Path = "/Values/PlayerCounterContextPool/Contexts"
+      Condition="!/Values/PlayerCounterContextPool/Contexts/Item[Asset='114431']">
+      <Item>
+        <Asset>114431</Asset>
+      </Item>
+    </ModOp>
+    
+    
     
     
     <!-- not sure if adding all quest related ships also to the "combat effects" pool is a bugfix... -->
