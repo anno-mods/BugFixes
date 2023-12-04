@@ -46,7 +46,20 @@
         <GUID>720</GUID>
       </Item>
     </ModOp>
-
+    
+    <!-- FlakMonitor and Fire Monitor to All PlayerShips -->
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='720']">
+      <Item>
+        <Asset>720</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='968']">
+      <Item>
+        <Asset>968</Asset>
+      </Item>
+    </ModOp>
 
 
     <!-- following is missing in vanilla WorkforceGoods ProductLists:   -->
