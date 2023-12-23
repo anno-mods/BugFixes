@@ -86,6 +86,35 @@
       <Crossing_Pipe_StreetFast>127913</Crossing_Pipe_StreetFast>
     </ModOp>
     
+    
+    <!-- Fix from nyk/Pnski https://github.com/Pnski . Adds missing products to the market overview (in this case Enbesa) -->
+    <ModOp Type="add" GUID='122362' Path="/Values/ProductStorageList/ProductList"
+      Condition="!/Values/ProductStorageList/ProductList/Item[Product='133183']">
+        <Item>
+          <Product>133183</Product>
+        </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='122362' Path="/Values/ProductStorageList/ProductList"
+      Condition="!/Values/ProductStorageList/ProductList/Item[Product='25506']">
+        <Item>
+          <Product>25506</Product>
+        </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='122362' Path="/Values/ProductStorageList/ProductList"
+      Condition="!/Values/ProductStorageList/ProductList/Item[Product='1010217']">
+        <Item>
+          <Product>1010217</Product>
+        </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='122362' Path="/Values/ProductStorageList/ProductList"
+      Condition="!/Values/ProductStorageList/ProductList/Item[Product='1010203']">
+        <Item>
+          <Product>1010203</Product>
+        </Item>
+    </ModOp>
+    
+    
+    
     <!-- ############################################################ -->
     <!-- QUESTS -->
     <!-- ############################################################ -->
@@ -95,6 +124,12 @@
     <ModOp Type="merge" GUID="119041,119040,119038,119042,119043,119044" Path="/Values/Reward/RewardAssets/Item[1]">
       <Amount>3</Amount>
     </ModOp>
+    
+    
+    
+    
+    
+    
     
 
 
