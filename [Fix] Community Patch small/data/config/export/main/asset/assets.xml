@@ -113,7 +113,60 @@
         </Item>
     </ModOp>
     
+    <!-- ######################################## -->
+    <!-- from Lion053, fixing several product lists -->
     
+    <!-- adding the ArtistaUnlockGoods List to GUID 502220 (AllGoodsUnlock_EuropeSort_WithoutOil_WithoutScrap), because it also includes ObreroUnlockGoods and this fixes the issue of missing Artista goods displayed in the docklands export menu with filter "All Goods"  -->
+    <ModOp Type="addNextSibling" GUID="502220" Path="/Values/ProductList/List/Item[Product='502023']" Condition="!/Values/ProductList/List/Item[Product='7397']">
+      <Item>
+        <Product>7397</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- Remove DLC12 ArtistaUnlockGoods from ObreroUnlockGoods -->
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5383']" Path="/Values/ProductList/List/Item[Product='5383']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5384']" Path="/Values/ProductList/List/Item[Product='5384']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5401']" Path="/Values/ProductList/List/Item[Product='5401']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5385']" Path="/Values/ProductList/List/Item[Product='5385']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5386']" Path="/Values/ProductList/List/Item[Product='5386']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5380']" Path="/Values/ProductList/List/Item[Product='5380']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5395']" Path="/Values/ProductList/List/Item[Product='5395']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5381']" Path="/Values/ProductList/List/Item[Product='5381']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5382']" Path="/Values/ProductList/List/Item[Product='5382']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5389']" Path="/Values/ProductList/List/Item[Product='5389']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5388']" Path="/Values/ProductList/List/Item[Product='5388']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5400']" Path="/Values/ProductList/List/Item[Product='5400']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5390']" Path="/Values/ProductList/List/Item[Product='5390']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5391']" Path="/Values/ProductList/List/Item[Product='5391']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5392']" Path="/Values/ProductList/List/Item[Product='5392']"/>
+    <ModOp Type="remove" GUID="502023" Condition="/Values/ProductList/List/Item[Product='5803']" Path="/Values/ProductList/List/Item[Product='5803']"/>
+
+    <!-- Fix production region for electric cables to be shown in the correct tab in trade menu screen (Intermediate + NW) -->
+    <ModOp Type="addNextSibling" GUID="6280" Path="/Values/Product/ProductionRegions/Item[RegionType='Moderate']" Condition="!/Values/Product/ProductionRegions/Item[RegionType='Colony01']">
+        <Item>
+          <RegionType>Colony01</RegionType>
+        </Item>
+    </ModOp>
+
+    <!-- Add soccer balls to ArtistaUnlockGoods -->
+    <ModOp Type="addNextSibling" GUID="7397" Path="/Values/ProductList/List/Item[Product='5382']" Condition="!/Values/ProductList/List/Item[Product='5803']">
+      <Item>
+        <Product>5803</Product>
+      </Item>
+    </ModOp>
+    
+    <!-- ###################################### -->
+    
+    <!-- make the VehicleBuff 191305 (slow down when hit by pucklegun) work on all ships (in vanilla it misses EffectTargets, so does not affect any ship) -->
+    <!-- The description of the PuckleGun include that is slows ships and the projectile from the gun has this debuff, but still in vanilla it does not apply to any ship. So I think this is for sure a bug -->
+    <ModOp Type="merge" GUID="191305" Path="/Values/ItemEffect">
+      <EffectTargets />
+    </ModOp>
+    <ModOp Type="add" GUID="191305" Path="/Values/ItemEffect/EffectTargets" Condition="!/Values/ItemEffect/EffectTargets/Item[GUID='1512']">
+      <Item>
+        <GUID>1512</GUID>
+      </Item>
+    </ModOp>
     
     <!-- ############################################################ -->
     <!-- QUESTS -->
