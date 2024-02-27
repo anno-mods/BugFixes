@@ -159,14 +159,16 @@
     
     <!-- make the VehicleBuff 191305 (slow down when hit by pucklegun) work on all ships (in vanilla it misses EffectTargets, so does not affect any ship) -->
     <!-- The description of the PuckleGun include that is slows ships and the projectile from the gun has this debuff, but still in vanilla it does not apply to any ship. So I think this is for sure a bug -->
-    <ModOp Type="merge" GUID="191305" Path="/Values/ItemEffect">
+    <!-- also other projectile buffs like chainshots/anarchy flag shots do not work (anymore?) in vanilla, since they have not targets defined -->
+    <ModOp Type="merge" GUID="191305,192003,110957" Path="/Values/ItemEffect">
       <EffectTargets />
     </ModOp>
-    <ModOp Type="add" GUID="191305" Path="/Values/ItemEffect/EffectTargets" Condition="!/Values/ItemEffect/EffectTargets/Item[GUID='1512']">
+    <ModOp Type="add" GUID="191305,192003,110957" Path="/Values/ItemEffect/EffectTargets" Condition="!/Values/ItemEffect/EffectTargets/Item[GUID='1512']">
       <Item>
         <GUID>1512</GUID>
       </Item>
     </ModOp>
+    
     
     <!-- ############################################################ -->
     <!-- QUESTS -->

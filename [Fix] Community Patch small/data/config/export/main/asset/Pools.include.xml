@@ -4,6 +4,9 @@
     <!-- Adding GUIDs to various pools they should belong to -->
 
   
+    
+  
+  
   
     <!-- Missing Unlocks from some goods (adding them to the same AssetPool as their factory) -->
     <!-- Jalea -->
@@ -58,6 +61,14 @@
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='968']">
       <Item>
         <Asset>968</Asset>
+      </Item>
+    </ModOp>
+    
+    <!-- Add Passage Airship (Trade) to All AirShips -->
+    <ModOp Type="add" GUID='102492' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='114166']">
+      <Item>
+        <GUID>114166</GUID>
       </Item>
     </ModOp>
 
@@ -522,7 +533,16 @@
       </Item>
     </ModOp>
     
+    <!-- ####################################################### -->
     
+    <!-- add icon to the all pirate ships pool -->
+    <ModOp Type="merge" GUID='700138' Path="/Values/Standard" Condition="!/Values/Standard/IconFilename">
+      <IconFilename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</IconFilename>
+    </ModOp>
+    <!-- and to the all player ships pool -->
+    <ModOp Type="merge" GUID='700155' Path="/Values/Standard" Condition="!/Values/Standard/IconFilename">
+      <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</IconFilename>
+    </ModOp>
     
     
     <!-- not sure if adding all quest related ships also to the "combat effects" pool is a bugfix... -->

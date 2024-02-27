@@ -3,20 +3,58 @@
     <!-- TODO add for other languages -->
 
   
-        
+    
+    <!-- clarify that the region, not the session is ment (in vanilla they are named the same -.-) -->
+     <!-- some people dont like real-world names like Europe/America.., so we will instead use vanilla names which include "Region:..." -->
+      <!-- (using ModOpContent instead of AssetData because AssetData does not work everywhere) -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000000']/Text" Content="/TextExport/Texts/Text[GUID = '113322']/Text/text()">
+      <Text><ModOpContent /></Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000001']/Text" Content="/TextExport/Texts/Text[GUID = '113395']/Text/text()">
+      <Text><ModOpContent /></Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '160001']/Text" Content="/TextExport/Texts/Text[GUID = '115487']/Text/text()">
+      <Text><ModOpContent /></Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '114327']/Text" Content="/TextExport/Texts/Text[GUID = '129512']/Text/text()">
+      <Text><ModOpContent /></Text>
+    </ModOp>
+    
+    <!-- ############################################### -->
+    
+    <!-- ItemEffectTargetPool -->
+    <!-- more precise naming of pools / translation / fix -->
+    
     <!-- fix typo in german language: original: <Text>Bauern-​Arbeitskaft</Text> -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
       <Text>Bauern-​Arbeitskraft</Text>
     </ModOp>
     
     <!-- translate the pool, original: "all Ships" new: "Alle Schiffe" -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='1512']/Text">
-        <Text>[AssetData(191454) Text]</Text>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1512']/Text" Content="/TextExport/Texts/Text[GUID = '191454']/Text/text()">
+      <Text><ModOpContent /></Text>
     </ModOp>
     <!-- translate the pool, original: "All Trade Airships" new: "Alle unbewaffneten Luftschiffe" -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='7087']/Text">
-        <Text>[AssetData(4147) Text]</Text>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '7087']/Text" Content="/TextExport/Texts/Text[GUID = '4147']/Text/text()">
+      <Text><ModOpContent /></Text>
     </ModOp>
+    
+    <!-- vanilla: Alle Kontore -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191297']/Text[not(contains(.,'[AssetData(5000000) Text]'))]"
+      Content="/TextExport/Texts/Text[GUID = '191297']/Text/text()">
+      <Text><ModOpContent /> [AssetData(5000000) Text]</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191298']/Text[not(contains(.,'[AssetData(5000001) Text]'))]"
+      Content="/TextExport/Texts/Text[GUID = '191298']/Text/text()">
+      <Text><ModOpContent /> [AssetData(5000001) Text]</Text>
+    </ModOp>
+    
+    
+    <!-- ############################################### -->
+    
+    <!-- PlayerCounter Pools -->
+     <!-- usually used in Quest Goals, so like "destroy X" or "deliver X", so no "all" in front of it needed -->
+    
     
     <!-- translate/replace playercounter pools... original: Context Pool All Farmer Products -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700052']/Text">
@@ -32,30 +70,20 @@
       <Text>Ingenieurs Waren</Text>
     </ModOp>
     
-    <!-- clarify that the region, not the session is ment (in vanilla they are named the same -.-) -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000000']/Text">
-      <Text>Europa (Region)</Text>
-    </ModOp>
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000001']/Text">
-      <Text>Südamerika (Region)</Text>
-    </ModOp>
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '160001']/Text">
-      <Text>Arktis (Region)</Text>
-    </ModOp>
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '114327']/Text">
-      <Text>Afrika (Region)</Text>
+    <!-- add translation for All Pirate Ships PlayerCounterPool -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700138']">
+      <Text>
+        <GUID>700138</GUID>
+        <Text>Piratenschiffe</Text>
+      </Text>
     </ModOp>
     
-    
-    <!-- more precise naming of pools: -->
-    <!-- vanilla: Alle Kontore -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191297']/Text[not(contains(.,'[AssetData(5000000) Text]'))]"
-      Content="/TextExport/Texts/Text[GUID = '191297']/Text/text()">
-      <Text><ModOpContent /> [AssetData(5000000) Text]</Text>
-    </ModOp>
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191298']/Text[not(contains(.,'[AssetData(5000001) Text]'))]"
-      Content="/TextExport/Texts/Text[GUID = '191298']/Text/text()">
-      <Text><ModOpContent /> [AssetData(5000001) Text]</Text>
+    <ModOp Type="add" Path="/TextExport/Texts">
+      <!-- seems this one has no text entry yet?! add it (does not hurt if added multiple times, the last entry will be used): CP - All PlayerShips -->
+      <Text>
+        <GUID>700155</GUID>
+        <Text>Schiffe von Mitspielern</Text>
+      </Text>
     </ModOp>
     
     
