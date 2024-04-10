@@ -29,6 +29,11 @@
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
       <Text>Bauern-​Arbeitskraft</Text>
     </ModOp>
+    <!-- only wrong in german, original: Stadtschwächung (in english correct: tow debuff) -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
+      <Text>Abschlepp-Malus</Text>
+    </ModOp>
+
     
     <!-- translate the pool, original: "all Ships" new: "Alle Schiffe" -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1512']/Text" Content="/TextExport/Texts/Text[GUID = '191454']/Text/text()">
@@ -84,6 +89,11 @@
         <GUID>700155</GUID>
         <Text>Schiffe von Mitspielern</Text>
       </Text>
+    </ModOp>
+    
+    <!-- fix wrong german translation. English: TowDebuff (Tow) in german it is Stadtschwächung, which is wrong.  -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '6000032']/Text">
+      <Text>Abschlepp-Malus</Text>
     </ModOp>
     
     
