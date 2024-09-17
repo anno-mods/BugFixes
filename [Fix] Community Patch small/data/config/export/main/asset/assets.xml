@@ -16,7 +16,7 @@
     </ModOp>
     
 
-    <!-- fix wrong effect target GUID in vanilla it is a Recipe GUID 25351, while it should be multifactory 25350 -->
+    <!-- fix wrong effect target GUID in vanilla it is a Recipe GUID 25351, while it should be multifactory 25350 (makes item affect Hacienda destilery) -->
     <ModOp Type="replace" GUID="191380" Condition="/Values/ItemEffect/EffectTargets/Item/GUID[text()='25351']" Path="/Values/ItemEffect/EffectTargets/Item/GUID[text()='25351']">
       <GUID>25350</GUID>
     </ModOp>
@@ -175,7 +175,7 @@
     
     <!-- make the VehicleBuff 191305 (slow down when hit by pucklegun) work on all ships (in vanilla it misses EffectTargets, so does not affect any ship) -->
     <!-- The description of the PuckleGun include that is slows ships and the projectile from the gun has this debuff, but still in vanilla it does not apply to any ship. So I think this is for sure a bug -->
-    <!-- also other projectile buffs like chainshots/anarchy flag shots do not work (anymore?) in vanilla, since they have not targets defined -->
+    <!-- also other projectile buffs like chainshots/anarchy flag shots do not work (anymore?) in vanilla, since they have no targets defined -->
     <ModOp Type="merge" GUID="191305,192003,110957,191954,191953,191614,6000032" Path="/Values/ItemEffect">
       <EffectTargets />
     </ModOp>
@@ -217,6 +217,18 @@
       <Amount>3</Amount>
     </ModOp>
     
+    <!-- Fix some delivery Quests which ask for money on the island, while money is a Meta product, which is why the quests are not solveable -->
+    <ModOp Type="replace" GUID="119016,151543,110881,118964" Path="/Values/Objectives/WinConditions/Item/Objective/Values/ConditionQuestDelivery[DeliveryObject_cqd/Item/ObjectGUID='1010017']/DeliveryType">
+      <DeliveryType>Meta</DeliveryType>
+    </ModOp>
+    <!-- fix text that mentions "t"/"tons" while we delivery money -->
+    <ModOp Type="replace" GUID="119016" Path="/Values/Objectives/WinConditions/Item/Objective/Values[ConditionQuestDelivery/DeliveryObject_cqd/Item/ObjectGUID='1010017']/ConditionQuestObjective/TextCombinedContextValue">
+      <TextCombinedContextValue>22071</TextCombinedContextValue>
+    </ModOp>
+    <!-- and the quest asks you for 20k money (scaled) and yield like ~13k money... so lets multiply the reward also for this quest -->
+    <ModOp Type="merge" GUID="119016" Path="/Values/Reward/RewardAssets/Item[1]">
+      <Amount>3</Amount>
+    </ModOp>
     
     
     

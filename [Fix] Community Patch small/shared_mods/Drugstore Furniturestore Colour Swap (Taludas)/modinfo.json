@@ -1,0 +1,70 @@
+{
+  "Version": "1.0",
+  "ModID": "Taludas_DrugstoreFurnitureStoreIcons",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "Chinese": "UI",
+    "English": "UI",
+    "French": "UI",
+    "German": "UI",
+    "Italian": "UI",
+    "Japanese": "UI",
+    "Korean": "UI",
+    "Polish": "UI",
+    "Russian": "UI",
+    "Spanish": "UI",
+    "Taiwanese": "UI"
+  },
+  "ModName": {
+    "Chinese": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "English": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "French": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "German": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Italian": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Japanese": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Korean": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Polish": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Russian": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Spanish": "Drugstore and Furniturestore Icon Colour Swap (Taludas)",
+    "Taiwanese": "Drugstore and Furniturestore Icon Colour Swap (Taludas)"
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "This small mod changes the background colour of the icons of the furniture store and the drugstore to the colour of the roofs of their buildings for better accessability and congruence.",
+    "French": null,
+    "German": "Diese kleine Mod ändert die Hintergrundfarbe der Icons des Möbelhauses und der Drogerie in die Farbe der Dächer ihrer Gebäude, um eine bessere Zugänglichkeit und Übereinstimmung zu gewährleisten.",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues": 
+  [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [
+    {
+      "DLC":"Highlife",
+      "Dependant": "required"
+    }
+  ],
+  "CreatorName": "Taludas",
+  "CreatorContact": "https://github.com/Taludas/SmallModsCollection",
+  "Image": null
+}

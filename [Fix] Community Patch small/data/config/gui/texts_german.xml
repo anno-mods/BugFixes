@@ -30,7 +30,7 @@
       <Text>Bauern-​Arbeitskraft</Text>
     </ModOp>
     <!-- only wrong in german, original: Stadtschwächung (in english correct: tow debuff) -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '6000032']/Text">
       <Text>Abschlepp-Malus</Text>
     </ModOp>
 
@@ -91,10 +91,6 @@
       </Text>
     </ModOp>
     
-    <!-- fix wrong german translation. English: TowDebuff (Tow) in german it is Stadtschwächung, which is wrong.  -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '6000032']/Text">
-      <Text>Abschlepp-Malus</Text>
-    </ModOp>
     
     
 </ModOps>
