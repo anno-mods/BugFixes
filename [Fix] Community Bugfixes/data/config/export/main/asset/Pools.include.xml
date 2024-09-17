@@ -4,8 +4,48 @@
     <!-- Adding GUIDs to various pools they should belong to -->
 
   
-    
+    <!-- add arctic kontors to 193897 "all kontors EU &amp; SA + Africa", because it makes no sense to not allow item effects for arctic kontor -->
+   <!-- this also adds them automatically to "193986 all military units NEW", "193480 all loading time buildings", "191508 all harbour buildings" and "193897 all kontors and piers"  -->
+   <ModOp Type="add" GUID='190797' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+    Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='112659']">
+      <Item>
+        <GUID>112659</GUID>
+      </Item>
+      <Item>
+        <GUID>112660</GUID>
+      </Item>
+      <Item>
+        <GUID>112661</GUID>
+      </Item>
+      <Item>
+        <GUID>112865</GUID>
+      </Item>
+      <Item>
+        <GUID>112866</GUID>
+      </Item>
+      <Item>
+        <GUID>112867</GUID>
+      </Item>
+      
+      <!-- Air cliff kontors.. maybe better not adding them, since they behave a bit different? -->
+      <!-- <Item> -->
+        <!-- <GUID>112726</GUID> -->
+      <!-- </Item> -->
+      <!-- <Item> -->
+        <!-- <GUID>116003</GUID> -->
+      <!-- </Item> -->
+      <!-- <Item> -->
+        <!-- <GUID>116004</GUID> -->
+      <!-- </Item> -->
+    </ModOp>
   
+    <!-- add palace to attracitivy culture effect -->
+    <ModOp Type="add" GUID="193666" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='249947']">
+      <Item>
+        <GUID>249947</GUID>
+      </Item>
+    </ModOp>
   
   
     <!-- Missing Unlocks from some goods (adding them to the same AssetPool as their factory) -->

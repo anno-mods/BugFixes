@@ -14,41 +14,28 @@
       <AttackableType>IslandBuilding</AttackableType> 
   </ModOp>
   
+
+    
+    <!-- Dont allow Flak to shoot at ground targets! This was added by devs to allow military items like mortar to do ground damage when equipped on Flak Monitor -->
+  <!-- but it also makes everyone, including the AI/pirates who regulary use it passively, to attack ground targets with Flak (if controlled in a group with normal ships) -->
+  <!-- while they do very high damage (and neither can add new attacktypes nor damagetypes to fix this..) -->
+  <!-- evlt könnte man stattdessen Airship reinschreiben, aber ich weiß nicht ob das nicht auch unvorhergesehene nebenwirkungen hat. also bringen wir es zurück auf den Stand vor Game Update 17.1 -->
+  <!-- Für HunterAirship/BombardierAirship gibt es dieses Problem übrigens nicht, da alle Luftschiffe intern offenbar zusätzlich BombardierAirship haben, egal was in xml Datei steht. -->
+   <!-- Dies sorgt dafür dass sie Boden bambardieren können, auch mit Items, aber dennoch nicht wie Flak in ner Flotte Bodenziele angreifen dürfen. -->
+    <!-- daraus folgt: die Devs die die Bugfixes für Anno1800 machen, haben keinen Plan oder dürfen solche "außerhalb xml" Fixes nicht vornehmen, weshalb sie oft alles schlimmer als besser machen... -->
+  <!-- ... -->
+  <!-- HAKEN dieser anpassung: Die KI hat in ihrer Angriffsflotte zb auf Inseln dann keine Flak mehr dabei. -->
+  <!-- Vllt also doch vanilla lassen, weil in vanilla machen Flak Schiffe eh recht wenig Schaden, sodass es nicht so schlimm ist, wenn sie Schiffe/Türme angreifen -->
+  <!-- <ModOp Type="replace" GUID='140999' Path="/Values/MilitaryFeature/CanAttackTable/Flak/CanDamageUntargeted"> -->
+    <!-- <CanDamageUntargeted></CanDamageUntargeted> -->
+  <!-- </ModOp> -->
   
-  
-   <!-- add arctic kontors to 193897 "All kontors and piers" -->
-   <!-- Maybe it might be better to add them instead to GUID 190797 ? Or why should arctic kontors be excluded?  -->
-   <ModOp Type="add" GUID='193897' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
-    Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='112659']">
-      <Item>
-        <GUID>112659</GUID>
-      </Item>
-      <Item>
-        <GUID>112660</GUID>
-      </Item>
-      <Item>
-        <GUID>112661</GUID>
-      </Item>
-      <Item>
-        <GUID>112865</GUID>
-      </Item>
-      <Item>
-        <GUID>112866</GUID>
-      </Item>
-      <Item>
-        <GUID>112867</GUID>
-      </Item>
-      <Item>
-        <GUID>112726</GUID>
-      </Item>
-      <Item>
-        <GUID>116003</GUID>
-      </Item>
-      <Item>
-        <GUID>116004</GUID>
-      </Item>
-    </ModOp>
-  
+  <!-- limiting the transporter range of every output-factory that has no limit defined (otherwise it is auto-defined by cycletime+outputstorage, which can often lead to bad ranges) -->
+   <!-- maybe better dont add this as bugfix, since it will definitely mess with the savegames from players.. -->
+  <ModOp Type="merge" Path="//Values/FactoryBase[FactoryOutputs/Item/StorageAmount and not(ClampedMaxTransporterLogisticCost)]">
+    <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
+    <ClampedMaxTransporterLogisticCost>67</ClampedMaxTransporterLogisticCost>
+  </ModOp>
   
 
 </ModOps>

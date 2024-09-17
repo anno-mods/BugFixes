@@ -3,11 +3,6 @@
 THIS is still WIP! Renaming and Restructure will for sure happen and is open for discussion at discord!
 But you can already contribute.
 
-I would organize it in this way:
-1) One mod for "small in file size" fixes.
-2) One package of fixes for bigger files, like graphics.
-Dividing it like this because graphic fixes might get very big in filesize (of course this mod also includes necessary xml changes to fix the graphics). So the graphic package will publish an update after modders added new fixes to it more seldom, to keep the downloadtraffic low. While the small sized patch-mod can be updated more often.
-
 If you are not sure if your mod is a "Fix" or "personal taste" or if it is the best way to fix it, we can discuss at discord if we should include it or not. You may put your code into the "ChangesOpenForDiscussion" folder.
 
 If your fix has negative consequences that not every user would like to accept (eg. it is more a workaround, not a real fix), you should make it a separate mod, so users can decide if they want it or not.

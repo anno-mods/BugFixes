@@ -1,0 +1,23 @@
+{
+  "Version": "1.0",
+  "ModID": "1_TextBugfixes",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "English": "Fix"
+  },
+  "ModName": {
+    "English": "TextBugfixes"
+  },
+  "Description": {
+    "English": "Includes many small fixes regarding wrong ingame Text (seperate submod to load as early as possible, so ModOpContent in other mods can fetch the fixed texts)"
+  },
+  "KnownIssues": [
+    {
+      "English": null
+    }
+  ],
+  "DLCDependencies": null,
+  "CreatorName": "Serp,Taludas,Taubenangriff,Lion053,Kurila,Hier0nimus,Jakob,pnski,Ac3s,Hackner,xn-d,...",
+  "CreatorContact": "https://github.com/anno-mods/BugFixes"
+}

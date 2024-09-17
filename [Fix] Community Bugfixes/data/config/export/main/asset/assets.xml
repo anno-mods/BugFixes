@@ -5,6 +5,16 @@
     <Include File="./Pools.include.xml" />
 
 
+    <!-- Increase the StorageAmount from all Multifactory_Chemical and limit their transporter range to sane amounts -->
+      <!-- (at least the Clamp code might be good for nearly every buildings, but we don't want to mess with too many buildings in this bugfix mod, only with the ones where vanilla is critical. Since we dont want to mess with the current build of savegames too much) -->
+    <ModOp Type="merge" GUID="132786,132777,135133,133533" Path="/Values/FactoryBase/FactoryInputs/Item" Condition="/Values/FactoryBase/FactoryInputs/Item[StorageAmount&lt;10]">
+      <StorageAmount>10</StorageAmount>
+    </ModOp>
+    <ModOp Type="merge" GUID="132786,132777,135133,133533" Path="/Values/FactoryBase" Condition="/Values/FactoryBase[FactoryOutputs/Item/StorageAmount and not(ClampedMaxTransporterLogisticCost)]">
+      <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
+      <ClampedMaxTransporterLogisticCost>67</ClampedMaxTransporterLogisticCost>
+    </ModOp>
+
 
 
     <!-- Add Narrator speach to some sidenotifications -->
@@ -67,6 +77,10 @@
     </ModOp>
    
    
+    <!-- airship Bombs: allow unrestricted targetting for QoL, to better be able to target harbourbuildings partly standing on land (this change alone does not make other buildings on land take damage) -->
+    <ModOp Type="replace" GUID="846" Path="/Values/BombardmentAmmo/TargetMode">
+        <TargetMode>1013</TargetMode> <!-- 1013 = unrestricted dropping, player can now also bomb on land just like AI can --> <!-- original = 456 -->
+    </ModOp>
    
     
     <!-- by "xn-d", vanilla uses flamethrower sound currently for armor piercing gun -->
@@ -95,6 +109,28 @@
         </Item>
       </ProjectileImpact>
     </ModOp>
+    
+    <!-- fix the gender perk for 125129 -->
+    <ModOp Type="merge" GUID="125129" Path="/Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='PerkFemale']"
+      Condition="/Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='PerkFemale']">
+      <Attribute>PerkMale</Attribute>
+    </ModOp>
+    
+    
+    <!-- 1966 "DungCollector Enbesa" uses a deprectated property OutputAmountFactorUpgrade, trying to reduce the output by -5%. -->
+      <!-- To make it work we replace it with ProductivityUpgrade -->
+       <!-- see Item 1964 "DungCollector Moderate" as comparisaon how it is meant to be -->
+    <ModOp Type="remove" GUID="1966" Path="/Values/FactoryUpgrade/OutputAmountFactorUpgrade"
+      Condition="/Values/FactoryUpgrade/OutputAmountFactorUpgrade">
+    </ModOp>
+    <ModOp Type="merge" GUID="1966" Path="/Values/FactoryUpgrade"
+      Condition="!/Values/FactoryUpgrade/ProductivityUpgrade">
+        <ProductivityUpgrade>
+          <Value>-5</Value>
+          <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+    
     
     
     <!-- from Ac3s, vanilla has normal crossing street 117786 here -->
