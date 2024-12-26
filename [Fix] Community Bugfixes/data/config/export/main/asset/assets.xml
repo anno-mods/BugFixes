@@ -1,5 +1,10 @@
 <ModOps>
     
+  <!-- TODO: -->
+   <!-- man könnte zu folgendem versuchen einen besseren text zuzufügen (anstelle von "Have an aquatic enclosure in your zoo"), der alle gültgen objekte auflistet: -->
+   <!-- according to code the quest (153187 which is a subquest of 153176) accepts any of these: -->
+    <!-- Deep Aquarium, Ice Field Aquarium, Rocky Aquarium,Dolphinarium,Tropical Island Aquarium,Pirate Island Aquarium,River Aquarium -->
+
 
     <!-- Adding GUIDs to various pools they should belong to -->
     <Include File="./Pools.include.xml" />
@@ -164,6 +169,23 @@
           <Product>1010203</Product>
         </Item>
     </ModOp>
+    
+    
+    <!-- Kurila: "In der 120059 (ArcticMarketPlaceStorageList) fehlen die einträge für 25506 (Chilisoße) und 6600 (Mezcal). -->
+      <!-- Aber die werden als Lifestyle von der aktischen bevölkerung verbraucht. Aber da sie in der liste fehlen werden sie nicht im UI der Kantine angezeigt." -->
+    <ModOp Type="add" GUID='120059' Path="/Values/ProductStorageList/ProductList"
+      Condition="!/Values/ProductStorageList/ProductList/Item[Product='25506']">
+        <Item>
+          <Product>25506</Product>
+        </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='120059' Path="/Values/ProductStorageList/ProductList"
+      Condition="!/Values/ProductStorageList/ProductList/Item[Product='6600']">
+        <Item>
+          <Product>6600</Product>
+        </Item>
+    </ModOp>
+    
     
     <!-- ######################################## -->
     <!-- from Lion053, fixing several product lists -->
