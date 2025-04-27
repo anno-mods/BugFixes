@@ -289,9 +289,36 @@
     </ModOp>
     
     
-    
-    
-    
+    <!-- Adjust some arctic Quests which require you to own a Boreas Airship all the time to trigger again. This makes no sense anymore since there are other better airhsips now to eg. collect arctic scrap. -->
+     <!-- We will change these quests to instead check "did the player own at any time at least 1 Boreas", since it seems the quests only care for the progress not for an actual airship -->
+    <!-- LostCargo_Pool -->
+    <ModOp Type="merge" GUID="116887" Path="/Values/PreConditionList/SubConditions/Item/SubCondition/Values/PreConditionList/Condition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
+    <!-- LostCargo_QuestVariationPool -->
+    <ModOp Type="merge" GUID="117260" Path="/Values/PreConditionList/Condition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
+    <!-- Lost Cargo Scrap Quests -->
+    <ModOp Type="merge" GUID="115979,116889,116890,116891,116892,116893,116894,116895,117279,117280,117281,117282,117283,117284,117285,117286,117287,117288,117289,117290,117399,117400,117401,117402,117403,117404,117405,117406,117407,117408,117409,117410,117411,117412,117413,117414" Path="/Values/PreConditionList/Condition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
+    <!-- Lost Cargo Items Quests -->
+    <ModOp Type="merge" GUID="117415,117416,117417,117418,117419" Path="/Values/PreConditionList/Condition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
+    <!-- a few Inuit Quests -->
+    <ModOp Type="merge" GUID="116747,116841,116864,116865,116866" Path="/Values/PreConditionList/SubConditions/Item/SubCondition/Values/PreConditionList/Condition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
+    <!-- Explorer Lost Cargo variation -->
+    <ModOp Type="merge" GUID="117115,117119.117120" Path="/Values/PreConditionList/SubConditions/Item/SubCondition/Values/PreConditionList/Condition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
+    <!-- same for Triggers Intermediate Arctic 2.1.1 Inventions, makes no sense to force players to own Boreas all the time -->
+    <ModOp Type="merge" GUID="116659,116660,116661,130277,130276,130278,116664,130281,130282,130280" Path="/Values/Trigger/SubTriggers/Item/SubTrigger/Values/Trigger/TriggerCondition/Values/ConditionPlayerCounter[Context='114166']">
+      <CounterValueType>Max</CounterValueType>
+    </ModOp>
     
 
 
