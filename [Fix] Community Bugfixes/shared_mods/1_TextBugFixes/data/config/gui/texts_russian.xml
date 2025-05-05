@@ -1,7 +1,7 @@
 <ModOps>
   
     <!-- I use "ModOpContent" whenever possible, to use an already existing text (to save translation work) -->
-    
+
     <!-- clarify that the region, not the session is ment (in vanilla they are named the same -.-) -->
      <!-- some people dont like real-world names like Europe/America.., so we will instead use vanilla names which include "Region:..." -->
       <!-- (using ModOpContent instead of AssetData because AssetData does not work everywhere) -->
@@ -32,7 +32,7 @@
       <Text><ModOpContent /></Text>
     </ModOp>
     
-    <!-- vanilla: Alle Kontore -->
+    <!-- vanilla: Alle Kontore / All Kontors -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '191297']/Text[not(contains(.,'[AssetData(5000000) Text]'))]"
       Content="/TextExport/Texts/Text[GUID = '191297']/Text/text()">
       <Text><ModOpContent /> [AssetData(5000000) Text]</Text>
@@ -45,29 +45,31 @@
     
     <!-- ############################################### -->
     
+    <!-- Adding missing text -->
+    
     <!-- PlayerCounter Pools -->
      <!-- usually used in Quest Goals, so like "destroy X" or "deliver X", so no "all" in front of it needed -->
     
     
     <!-- translate/replace playercounter pools... original: Context Pool All Farmer Products -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700052']/Text">
-      <Text>Bauern Waren</Text>
+      <Text>Farmer Goods</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700053']/Text">
-      <Text>Arbeiter Waren</Text>
+      <Text>Workers Goods</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700054']/Text">
-      <Text>Handwerker Waren</Text>
+      <Text>Artisans Goods</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700139']/Text">
-      <Text>Ingenieurs Waren</Text>
+      <Text>Engineers Goods</Text>
     </ModOp>
     
     <!-- add translation for All Pirate Ships PlayerCounterPool -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700138']">
       <Text>
         <GUID>700138</GUID>
-        <Text>Piratenschiffe</Text>
+        <Text>Pirate Ships</Text>
       </Text>
     </ModOp>
     
@@ -75,26 +77,14 @@
       <!-- seems this one has no text entry yet?! add it (does not hurt if added multiple times, the last entry will be used): CP - All PlayerShips -->
       <Text>
         <GUID>700155</GUID>
-        <Text>Schiffe von Mitspielern</Text>
+        <Text>Ships from Competitors</Text>
       </Text>
     </ModOp>
     
-    
-    <!-- ################################################################################################################################## -->
-    <!-- ################################################################################################################################## -->
-    <!-- ################################################################################################################################## -->
+    <!-- ################################################################# -->
     
     <!-- Add here fixes for typos only in this specific language: -->
     
-    <!-- ItemEffectTargetPool -->
-    <!-- fix typo in german language: original: <Text>Bauern-​Arbeitskaft</Text> -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010052']/Text">
-      <Text>Bauern-​Arbeitskraft</Text>
-    </ModOp>
-    <!-- only wrong in german, original: Stadtschwächung (in english correct: tow debuff) -->
-    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '6000032']/Text">
-      <Text>Abschlepp-Malus</Text>
-    </ModOp>
     
     
     

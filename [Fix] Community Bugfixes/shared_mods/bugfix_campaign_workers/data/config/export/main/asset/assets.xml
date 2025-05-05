@@ -1,0 +1,102 @@
+<ModOps>
+
+  <!-- Uses Serp GUIDS: 1500005526 -->
+
+  <!-- Fix campaign being unable to upgrade more farmers to workers -->
+  <!-- Campaign has a trigger 153245 that relocks the workers again as soon as you unlocked basic-clothes-chain -->
+  <!-- The Trigger to unlock it again is 150560 which triggers as soon as you completed the Quest 150841 (Freedom and the Free Press) -->
+   <!-- If you now complete this Quest before you reach clothes, the "again unlock" triggers before the relock, because it lacks proper conditions. -->
+   <!-- Instead of fixing the vanilla triggers, we will add a new Trigger that uses proper conditions (fixing vanilla would not resolve savegames) -->
+    <!-- So before we unlock workers we check: 1) is Quest 150841 completed. 2) are clothes unlocked? 3) are workers locked -->
+     <!-- this will make sure it unlocks it correctly and also in savegames. -->
+  <ModOp Type="addNextSibling" GUID="150560">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500005526</GUID>
+          <Name>Campaign_UnlockResidenceLvl2_Fix</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionQuestState</Template>
+            <Values>
+              <Condition />
+              <ConditionQuestState>
+                <ConditionQuestStateStates>Reached</ConditionQuestStateStates>
+                <ConditionQuestStateQuestGUID>150841</ConditionQuestStateQuestGUID>
+              </ConditionQuestState>
+            </Values>
+          </TriggerCondition>
+          <SubTriggers>
+            <Item>
+              <SubTrigger>
+                <Template>AutoCreateTrigger</Template>
+                <Values>
+                  <Trigger>
+                    <TriggerCondition>
+                      <Template>ConditionUnlocked</Template>
+                      <Values>
+                        <Condition />
+                        <ConditionUnlocked>
+                          <UnlockNeeded>130060</UnlockNeeded>
+                        </ConditionUnlocked>
+                        <ConditionPropsNegatable />
+                      </Values>
+                    </TriggerCondition>
+                    <SubTriggers>
+                      <Item>
+                        <SubTrigger>
+                          <Template>AutoCreateTrigger</Template>
+                          <Values>
+                            <Trigger>
+                              <TriggerCondition>
+                                <Template>ConditionUnlocked</Template>
+                                <Values>
+                                  <Condition />
+                                  <ConditionUnlocked>
+                                    <UnlockNeeded>1010344</UnlockNeeded>
+                                  </ConditionUnlocked>
+                                  <ConditionPropsNegatable>
+                                    <NegateCondition>1</NegateCondition>
+                                  </ConditionPropsNegatable>
+                                </Values>
+                              </TriggerCondition>
+                            </Trigger>
+                          </Values>
+                        </SubTrigger>
+                      </Item>
+                    </SubTriggers>
+                  </Trigger>
+                </Values>
+              </SubTrigger>
+            </Item>
+          </SubTriggers>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1010344</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+          <TriggerSetup>
+            <AutoRegisterTrigger>1</AutoRegisterTrigger>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Trigger>
+      </Values>
+    </Asset>
+  </ModOp>
+  
+  
+</ModOps>

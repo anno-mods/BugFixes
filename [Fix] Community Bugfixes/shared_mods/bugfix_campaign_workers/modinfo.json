@@ -1,0 +1,23 @@
+{
+  "Version": "1.0",
+  "ModID": "bugfix_campaign_workers",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "English": "BugFix"
+  },
+  "ModName": {
+    "English": "bugfix_campaign_workers"
+  },
+  "Description": {
+    "English": "Fixes the bug in campaign that you can not upgrade farmers to workers, although you solved the Quest 150841 (Freedom and the Free Press) already."
+  },
+  "KnownIssues": [
+    {
+      "English": null
+    }
+  ],
+  "DLCDependencies": null,
+  "CreatorName": "Serp",
+  "CreatorContact": "https://github.com/Serpens66"
+}

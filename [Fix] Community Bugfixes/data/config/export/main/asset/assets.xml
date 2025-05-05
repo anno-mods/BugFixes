@@ -4,6 +4,9 @@
    <!-- man könnte zu folgendem versuchen einen besseren text zuzufügen (anstelle von "Have an aquatic enclosure in your zoo"), der alle gültgen objekte auflistet: -->
    <!-- according to code the quest (153187 which is a subquest of 153176) accepts any of these: -->
     <!-- Deep Aquarium, Ice Field Aquarium, Rocky Aquarium,Dolphinarium,Tropical Island Aquarium,Pirate Island Aquarium,River Aquarium -->
+  
+  <!-- TODO: -->
+  <!-- check for compatibility to big mods like NH. Eg. Traders or Items fixes  -->
 
 
     <!-- Adding GUIDs to various pools they should belong to -->
