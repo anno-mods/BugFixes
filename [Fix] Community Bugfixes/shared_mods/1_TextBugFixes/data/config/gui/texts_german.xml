@@ -42,8 +42,20 @@
       <Text><ModOpContent /> [AssetData(5000001) Text]</Text>
     </ModOp>
     
+    <!-- ######################################################## -->
     
-    <!-- ############################################### -->
+    <!-- New Text GUIDS -->
+    
+    <!-- Add hint to Quest 153176 what it wants you to build -->
+    <ModOp Type="add" Path="/TextExport/Texts">
+      <Text>
+        <GUID>1500005603</GUID>
+        <Text>[AssetData(101993) Text] / [AssetData(102015) Text] / [AssetData(101989) Text] / [AssetData(1010479) Text] / [AssetData(100815) Text] / [AssetData(101990) Text] / [AssetData(101991) Text] / [AssetData(101992) Text]</Text>
+      </Text>
+    </ModOp>
+    
+    
+    <!-- ######################################################## -->
     
     <!-- PlayerCounter Pools -->
      <!-- usually used in Quest Goals, so like "destroy X" or "deliver X", so no "all" in front of it needed -->

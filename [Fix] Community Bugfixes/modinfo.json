@@ -4,12 +4,12 @@
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
   "ModDependencies": null,
-  "LoadAfterIds": ["*"],
+  "LoadAfterIds": ["*","1_TextBugfixes"],
   "Category": {
-    "English": "Patch"
+    "English": "Fix"
   },
   "ModName": {
-    "English": "Community Patch"
+    "English": "Community Bugfixes"
   },
   "Description": {
     "English": "Includes many small vanilla bugfixes. (Unfortunately we can not fix all the bugs still left in the game..)"
