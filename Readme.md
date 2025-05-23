@@ -9,7 +9,8 @@ If your fix has negative consequences that not every user would like to accept (
 
 ### How to contribute:
 - Either add your code/files directly into the mod.
-- Or add your code/files as a submod: Simply create a normal mod, but name the folder a bit different, so users will notice that it is not a normal mod they need to handle, like eg "submod_bugfix_ABC_Serp". A submod is the better choice if you dont want to mix your work with others and if you also published a standalone version of your bugfix (then use the same ModID for both) so the game only loads one of it, if a user has both installed.
+- Or add your code/files as a submod: Simply create a normal mod, but name the folder a bit different, so users will notice that it is not a normal mod they need to handle, like eg "submod_bugfix_ABC_Serp". A submod is the better choice if you dont want to mix your work with others and if you also published a standalone version of your bugfix (then use the same ModID for both) so the game only loads one of it, if a user has both installed.  
+- Fixes about ingame text are in a submod "1_TextBugFixes", to load them first, so other mods using things like ModOpContent can use the fixed text when loading after the bugfix mod.  
 
 Please make sure to write your code as compatible as possible, eg. when you add a guid to a pool use a Condition to check if it is not already there:
 ```xml
