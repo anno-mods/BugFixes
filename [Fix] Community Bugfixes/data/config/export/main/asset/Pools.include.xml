@@ -58,11 +58,17 @@
     </ModOp>
     
 
-    <!-- adding Oil Refinery to the pool buildings with maintenances: -->
+    <!-- adding Oil Refinery and Bauxitmine to the pool buildings with maintenances: -->
     <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
       Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='101331']">
       <Item>
         <GUID>101331</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='1308']">
+      <Item>
+        <GUID>1308</GUID>
       </Item>
     </ModOp>
    

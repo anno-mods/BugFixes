@@ -1,0 +1,11 @@
+Difference to version from Ac3s:
+ - more intuitiv keys: Numpad + or - for one step faster/slower. Shift and + or - for much faster/slower. numpad 0 to go back to normal speed.
+ - Allowing to change speed also while on Worldmap/Menu/Pause/PopUp
+ - Hiding the "change keybind" in the menu (because the game is unable to remember these settings anyway after the game was restarted..)
+ - Play an Audio and show a nice notification for all players, when the gamespeed was changed
+ - On leaving the game, the Speed is reset to 1, if it was below 1, because otherwise the game will freeze.
+
+1.01:
+- added narrator speach to the notifications
+1.02:
+- added code to reduce the gamespeed to 1 again when leaving the game, if it is below 1. otherwise the game will freeze.

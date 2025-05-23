@@ -1,6 +1,6 @@
 {
   "Version": "1.0",
-  "ModID": "Community_Bugfixes",
+  "ModID": "Community_Patch",
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
   "ModDependencies": null,
@@ -9,10 +9,10 @@
     "English": "Fix"
   },
   "ModName": {
-    "English": "Community Bugfixes"
+    "English": "Community Patch"
   },
   "Description": {
-    "English": "Includes many small vanilla bugfixes. (Unfortunately we can not fix all the bugs still left in the game..)"
+    "English": "Includes many small vanilla Bugfixes and small Quality of Life adjustments. No major game changes. (Unfortunately we can not fix all the bugs still left in the game..)"
   },
   "KnownIssues": [
     {
@@ -20,6 +20,6 @@
     }
   ],
   "DLCDependencies": null,
-  "CreatorName": "Serp,Taludas,Taubenangriff,Lion053,Kurila,Hier0nimus,Jakob,pnski,Ac3s,Hackner,xn-d",
+  "CreatorName": "Serp,Taludas,Taubenangriff,Lion053,Kurila,Hier0nimus,Jakob,pnski,Ac3s,Hackner,xn-d","...",
   "CreatorContact": "https://github.com/anno-mods/BugFixes"
 }
