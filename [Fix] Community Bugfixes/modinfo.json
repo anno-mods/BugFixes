@@ -21,5 +21,9 @@
   ],
   "DLCDependencies": null,
   "CreatorName": "Serp,Taludas,Taubenangriff,Lion053,Kurila,Hier0nimus,Jakob,pnski,Ac3s,Hackner,xn-d,...",
-  "CreatorContact": "https://github.com/anno-mods/BugFixes"
+  "CreatorContact": "https://github.com/anno-mods/BugFixes",
+  "ModioResourceId": 4346171,
+  "changelog": {
+    "1.01" : "Add ModioResourceId and changelog to modinfo.json"
+  }
 }
