@@ -18,6 +18,21 @@
       <Text><ModOpContent /></Text>
     </ModOp>
     
+    
+    <!-- imperialen Kontor umbenennen, damit ersichtlich im spiel welcher imperial ist und welcher nicht -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010540' or GUID = '101293' or GUID = '112865' or GUID = '114629']/Text">
+      <Text>Kleines Imperiales Kontor</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '100514' or GUID = '101294' or GUID = '112866' or GUID = '114630']/Text">
+      <Text>Mittleres Imperiales Kontor</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '100515' or GUID = '101295' or GUID = '112867' or GUID = '114631']/Text">
+      <Text>Großes Imperiales Kontor</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '269879']/Text">
+      <Text>Riesiges Imperiales Kontor</Text>
+    </ModOp>
+    
     <!-- ############################################### -->
     
     <!-- ItemEffectTargetPool -->
