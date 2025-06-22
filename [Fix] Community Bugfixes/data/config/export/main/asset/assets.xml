@@ -80,6 +80,15 @@
     </ModOp>
   </Group>
   
+  <!-- Archibald has ShipsForSale in EarlyGame/EarlyMidGame defined, but not ShipsForSaleAmount=1, while on MidGame it gets ShipsForSaleAmount=2 and ALL other ship traders have ShipsForSaleAmount=1 for these EarlyGames. So I consider this a bugfix -->
+  <!-- Using condition to make sure the value was not defined already by another mod, to not overwrite intential changes to other values from other mods -->
+  <ModOp Type="merge" GUID='45' Condition="/Values/Trader/Progression/EarlyGame[not(ShipsForSaleAmount)]" Path="/Values/Trader/Progression/EarlyGame">  
+    <ShipsForSaleAmount>1</ShipsForSaleAmount>
+  </ModOp>
+  <ModOp Type="merge" GUID='45' Condition="/Values/Trader/Progression/EarlyMidGame[not(ShipsForSaleAmount)]" Path="/Values/Trader/Progression/EarlyMidGame">  
+    <ShipsForSaleAmount>1</ShipsForSaleAmount>
+  </ModOp>
+  
    
     <!-- airship Bombs: allow unrestricted targetting for QoL, to better be able to target harbourbuildings partly standing on land (this change alone does not make other buildings on land take damage) -->
     <ModOp Type="replace" GUID="846" Path="/Values/BombardmentAmmo/TargetMode">

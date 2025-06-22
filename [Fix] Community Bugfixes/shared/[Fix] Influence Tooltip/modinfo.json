@@ -1,0 +1,47 @@
+{
+  "Version": "1",
+  "ModID": "ToolTip_OtherResidences",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "LoadAfterIds": null,
+  "Category": {
+    "English": "Fix",
+    "German": "Fix",
+    "Chinese": "Fix",
+    "French": "Fix",
+    "Italian": "Fix",
+    "Japanese": "Fix",
+    "Korean": "Fix",
+    "Polish": "Fix",
+    "Russian": "Fix",
+    "Spanish": "Fix",
+    "Taiwanese": "Fix"
+  },
+  "ModName": {
+    "English": "Influence Tooltip",
+    "German": "Einfluss Tooltip",
+    "Chinese": "Influence Tooltip",
+    "French": "Influence Tooltip",
+    "Italian": "Influence Tooltip",
+    "Japanese": "Influence Tooltip",
+    "Korean": "Influence Tooltip",
+    "Polish": "Influence Tooltip",
+    "Russian": "Influence Tooltip",
+    "Spanish": "Influence Tooltip",
+    "Taiwanese": "Influence Tooltip"
+  },
+  "Description": {
+    "English": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "German": "Benennt die Kategorie \"Ingenieure\" zu \"Häuser anderer Stufen\" um",
+    "Chinese": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "French": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Italian": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Japanese": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Korean": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Polish": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Russian": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Spanish": "Changes Engineer Category for influence to \"Other Tier Houses\" ",
+    "Taiwanese": "Changes Engineer Category for influence to \"Other Tier Houses\" "
+  },
+  "DLCDependencies": null
+}

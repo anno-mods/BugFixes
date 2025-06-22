@@ -1,6 +1,15 @@
 <ModOps>
     
 
+    <!-- TODO: -->
+    <!-- test if hacienda and its buildings are affected by optimization influece buff. -->
+     <!-- if not add them to <GUID>368</GUID> <Name>all buildings with maintenance DLC11</Name> -->
+      <!-- 2534 hacienda upkeep buildings -->
+       <!-- hacienda : 24768 -->
+    
+    
+
+
     <!-- Adding GUIDs to various pools they should belong to -->
 
   
@@ -46,6 +55,37 @@
         <GUID>249947</GUID>
       </Item>
     </ModOp>
+    
+    <!-- Adresse3233 all production except powerplant -->
+  <ModOp GUID="193856" Type="add" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+		<GUID>134619</GUID> <!-- Multifactory_Assembly_Blank -->
+      </Item>
+      <Item>
+		<GUID>134622</GUID> <!-- Multifactory_Assembly_Elevator -->
+      </Item>
+      <Item>
+		<GUID>135361</GUID> <!-- Multifactory_Assembly_Cookies -->
+      </Item>
+      <Item>
+		<GUID>135148</GUID> <!-- Multifactory_Assembly_Typewriter -->
+      </Item>
+      <Item>
+		<GUID>135295</GUID> <!-- Multifactory_Manufacturer_Blank -->
+      </Item>
+      <Item>
+		<GUID>135418</GUID> <!-- Multifactory_Manufacturer_Cognac -->
+      </Item>
+      <Item>
+		<GUID>135397</GUID> <!-- Multifactory_Manufacturer_Violin -->
+      </Item>
+      <Item>
+		<GUID>135407</GUID> <!-- Multifactory_Manufacturer_Billiard -->
+      </Item>
+      <Item>
+		<GUID>135669</GUID> <!-- Multifactory_Manufacturer_Toys -->
+      </Item>
+  </ModOp>
   
   
     <!-- Missing Unlocks from some goods (adding them to the same AssetPool as their factory) -->

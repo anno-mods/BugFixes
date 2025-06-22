@@ -1,5 +1,5 @@
 {
-  "Version": "1.01",
+  "Version": "1.011",
   "ModID": "Community_Patch",
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
