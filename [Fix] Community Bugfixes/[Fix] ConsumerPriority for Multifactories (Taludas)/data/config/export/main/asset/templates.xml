@@ -1,0 +1,5 @@
+<ModOps>
+    <ModOp Type="add" Template="Multifactory" Path="/Properties/Maintenance">
+        <ConsumerPriority>1</ConsumerPriority>
+    </ModOp>
+</ModOps>

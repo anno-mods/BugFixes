@@ -1,0 +1,75 @@
+{
+  "Version": "1.0.0",
+  "ModID": "Taludas_FixedFertiliserSiloUnlock",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "DeprecateIds": [
+  ],
+  "LoadAfterIds": [
+  ],
+  "ModioResourceId": null,
+  "Category": {
+    "Chinese": "Fix",
+    "English": "Fix",
+    "French": "Fix",
+    "German": "Fix",
+    "Italian": "Fix",
+    "Japanese": "Fix",
+    "Korean": "Fix",
+    "Polish": "Fix",
+    "Russian": "Fix",
+    "Spanish": "Fix",
+    "Taiwanese": "Fix"
+  },
+  "ModName": {
+    "Chinese": "Fertiliser Silo Unlock fixed (Taludas)",
+    "English": "Fertiliser Silo Unlock fixed (Taludas)",
+    "French": "Fertiliser Silo Unlock fixed (Taludas)",
+    "German": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Italian": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Japanese": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Korean": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Polish": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Russian": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Spanish": "Fertiliser Silo Unlock fixed (Taludas)",
+    "Taiwanese": "Fertiliser Silo Unlock fixed (Taludas)"
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "Fixes the Unlock of the unusable Fertiliser Silos when not having DLC10 Seeds of Change actived in your savegame.",
+    "French": null,
+    "German": "Behebt das Freischalten der unbrauchbaren Düngemittelsilos, wenn DLC10 Keim der Hoffnung nicht im Spielstand aktiviert ist.",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues":
+  [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [
+    {
+			"DLC": "SeedsOfChange",
+			"Dependant": "required"
+		}
+  ],
+  "CreatorName": "Taludas",
+  "CreatorContact": "https://github.com/Taludas/SmallModsCollection",
+  "Image": null
+}

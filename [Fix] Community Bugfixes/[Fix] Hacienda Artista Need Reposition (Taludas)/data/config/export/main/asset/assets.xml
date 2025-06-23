@@ -1,0 +1,40 @@
+<ModOps>
+    <ModOp Type="remove" GUID="5403" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product = '1010354']"></ModOp>
+    <ModOp Type="remove" GUID="5403" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product = '120030']"></ModOp>
+
+    <ModOp Type="addPrevSibling" GUID="5403" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product = '5803']">
+        <Item>
+            <Product>120030</Product>
+            <Amount>0.000296296</Amount>
+            <SupplyWeight>20</SupplyWeight>
+            <MoneyValue>100</MoneyValue>
+            <RequiredBuildings>
+                <Item>
+                    <RequiredBuilding>6086</RequiredBuilding>
+                </Item>
+            </RequiredBuildings>
+            <AdditionalGlobalUnlockRequirement>
+                <Population>15000003</Population>
+                <MinPopulationAmount>1</MinPopulationAmount>
+            </AdditionalGlobalUnlockRequirement>
+        </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="5403" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product = '5381']">
+        <Item>
+            <Product>1010354</Product>
+            <SupplyWeight>20</SupplyWeight>
+            <MoneyValue>60</MoneyValue>
+            <RequiredBuildings>
+                <Item>
+                    <RequiredBuilding>6086</RequiredBuilding>
+                </Item>
+            </RequiredBuildings>
+            <FullWeightPopulationCount>1800</FullWeightPopulationCount>
+            <NoWeightPopulationCount>899</NoWeightPopulationCount>
+            <AdditionalGlobalUnlockRequirement>
+                <Population>15000003</Population>
+                <MinPopulationAmount>1</MinPopulationAmount>
+            </AdditionalGlobalUnlockRequirement>
+        </Item>
+    </ModOp>
+</ModOps>

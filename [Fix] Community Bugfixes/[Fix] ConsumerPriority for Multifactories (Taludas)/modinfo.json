@@ -1,0 +1,83 @@
+{
+  "Version": "1.0.0",
+  "ModID": "Taludas_ConsumerPriorityforMultifactories",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "DeprecateIds": [
+  ],
+  "LoadAfterIds": [
+  ],
+  "ModioResourceId": null,
+  "Category": {
+    "Chinese": "Fix",
+    "English": "Fix",
+    "French": "Fix",
+    "German": "Fix",
+    "Italian": "Fix",
+    "Japanese": "Fix",
+    "Korean": "Fix",
+    "Polish": "Fix",
+    "Russian": "Fix",
+    "Spanish": "Fix",
+    "Taiwanese": "Fix"
+  },
+  "ModName": {
+    "Chinese": "ConsumerPriority for Multifactories (Taludas)",
+    "English": "ConsumerPriority for Multifactories (Taludas)",
+    "French": "ConsumerPriority for Multifactories (Taludas)",
+    "German": "ConsumerPriority for Multifactories (Taludas)",
+    "Italian": "ConsumerPriority for Multifactories (Taludas)",
+    "Japanese": "ConsumerPriority for Multifactories (Taludas)",
+    "Korean": "ConsumerPriority for Multifactories (Taludas)",
+    "Polish": "ConsumerPriority for Multifactories (Taludas)",
+    "Russian": "ConsumerPriority for Multifactories (Taludas)",
+    "Spanish": "ConsumerPriority for Multifactories (Taludas)",
+    "Taiwanese": "ConsumerPriority for Multifactories (Taludas)"
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "Fixes missing ConsumerPriority for Multifactories, which resulted in an unfair distribution of workforce when in negative values between multifactories and normal production buildings.",
+    "French": null,
+    "German": "Behebt fehlende ConsumerPriority für Multifactories, was bislang zu einer ungerechten Verteilung von Arbeitskräften bei negativen Werten zwischen Multifactories und normalen Produktionsgebäuden geführt hat.",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues":
+  [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [
+    {
+			"DLC": "HighLife",
+			"Dependant": "required"
+		},
+    {
+			"DLC": "Tourism",
+			"Dependant": "required"
+		},
+    {
+			"DLC": "NewWorldRising",
+			"Dependant": "required"
+		}
+  ],
+  "CreatorName": "Taludas",
+  "CreatorContact": "https://github.com/Taludas/SmallModsCollection",
+  "Image": null
+}

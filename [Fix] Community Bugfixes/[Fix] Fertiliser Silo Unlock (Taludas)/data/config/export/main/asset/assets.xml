@@ -1,0 +1,49 @@
+<ModOps>
+    <ModOp Type="replace" GUID="25056" Path="/Values/Trigger/TriggerCondition">
+        <TriggerCondition>
+            <Template>ConditionIsDLCActive</Template>
+            <Values>
+                <Condition/>
+                <ConditionIsDLCActive>
+                    <DLCAssetList>
+                        <Item>
+                            <DLCAsset>24961</DLCAsset>
+                        </Item>
+                    </DLCAssetList>
+                </ConditionIsDLCActive>
+                <ConditionPropsNegatable/>
+            </Values>
+        </TriggerCondition>
+    </ModOp>
+
+    <ModOp Type="add" GUID="25056" Path="/Values/Trigger">
+        <SubTriggers>
+            <Item>
+                <SubTrigger>
+                    <Template>AutoCreateTrigger</Template>
+                    <Values>
+                        <Trigger>
+                            <TriggerCondition>
+                                <Template>ConditionPlayerCounter</Template>
+                                <Values>
+                                    <Condition/>
+                                    <ConditionPlayerCounter>
+                                        <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                        <Context>15000006</Context>
+                                        <CounterAmount>1</CounterAmount>
+                                    </ConditionPlayerCounter>
+                                </Values>
+                            </TriggerCondition>
+                            <ResetTrigger>
+                                <Values>
+                                    <EmptyAutoCreateValue/>
+                                </Values>
+                                <Template>EmptyAutoCreateValue</Template>
+                            </ResetTrigger>
+                        </Trigger>
+                    </Values>
+                </SubTrigger>
+            </Item>
+        </SubTriggers>
+    </ModOp>
+</ModOps>

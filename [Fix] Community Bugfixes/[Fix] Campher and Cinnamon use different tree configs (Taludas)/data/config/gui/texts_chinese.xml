@@ -1,0 +1,18 @@
+<ModOps>
+  
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1999002241</GUID>
+      <Text>肉桂林</Text>
+    </Text>
+    <Text>
+      <GUID>1999002251</GUID>
+      <Text>新世界果园</Text>
+    </Text>
+    <Text>
+      <GUID>1999002252</GUID>
+      <Text>果园种子概述</Text>
+    </Text>
+  </ModOp>
+
+</ModOps>

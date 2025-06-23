@@ -1,0 +1,10 @@
+<ModOps>
+    <ModOp Type="add" GUID="5799" Path="/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
+        <Item>
+            <Asset>5164</Asset>
+        </Item>
+        <Item>
+            <Asset>7305</Asset>
+        </Item>
+    </ModOp>
+</ModOps>
