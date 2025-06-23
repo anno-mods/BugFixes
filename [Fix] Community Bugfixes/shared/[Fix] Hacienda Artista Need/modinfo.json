@@ -1,0 +1,78 @@
+{
+  "Version": "1.0.1",
+  "ModID": "Taludas_HaciendaArtistaNeedRepositioning",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "DeprecateIds": [
+  ],
+  "LoadAfterIds": ["*"],
+  "ModioResourceId": null,
+  "Category": {
+    "Chinese": "Fix",
+    "English": "Fix",
+    "French": "Fix",
+    "German": "Fix",
+    "Italian": "Fix",
+    "Japanese": "Fix",
+    "Korean": "Fix",
+    "Polish": "Fix",
+    "Russian": "Fix",
+    "Spanish": "Fix",
+    "Taiwanese": "Fix"
+  },
+  "ModName": {
+    "Chinese": "Hacienda Artista Need Repositioning (Taludas)",
+    "English": "Hacienda Artista Need Repositioning (Taludas)",
+    "French": "Hacienda Artista Need Repositioning (Taludas)",
+    "German": "Hacienda Artista Need Repositioning (Taludas)",
+    "Italian": "Hacienda Artista Need Repositioning (Taludas)",
+    "Japanese": "Hacienda Artista Need Repositioning (Taludas)",
+    "Korean": "Hacienda Artista Need Repositioning (Taludas)",
+    "Polish": "Hacienda Artista Need Repositioning (Taludas)",
+    "Russian": "Hacienda Artista Need Repositioning (Taludas)",
+    "Spanish": "Hacienda Artista Need Repositioning (Taludas)",
+    "Taiwanese": "Hacienda Artista Need Repositioning (Taludas)"
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "Fixes the position of Spectacles and Electricity needs in the Hacienda Artista residence UI.",
+    "French": null,
+    "German": "Fixt die Position der Brillen- und des Strom-Bedürfnisses im UI der Hacienda Artista Häuser.",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues":
+  [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [
+    {
+			"DLC": "NewWorldRising",
+			"Dependant": "required"
+		},
+    {
+			"DLC": "SeedsOfChange",
+			"Dependant": "required"
+		}
+  ],
+  "CreatorName": "Taludas",
+  "CreatorContact": "https://github.com/Taludas/SmallModsCollection",
+  "Image": null
+}

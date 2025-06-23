@@ -1,0 +1,79 @@
+{
+  "Version": "1.0.0",
+  "ModID": "Taludas_TransporterRange",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "DeprecateIds": [
+  ],
+  "LoadAfterIds": [
+  ],
+  "ModioResourceId": null,
+  "Category": {
+    "Chinese": "Fix",
+    "English": "Fix",
+    "French": "Fix",
+    "German": "Fix",
+    "Italian": "Fix",
+    "Japanese": "Fix",
+    "Korean": "Fix",
+    "Polish": "Fix",
+    "Russian": "Fix",
+    "Spanish": "Fix",
+    "Taiwanese": "Fix"
+  },
+  "ModName": {
+    "Chinese": "Transporter Range (Taludas)",
+    "English": "Transporter Range (Taludas)",
+    "French": "Transporter Range (Taludas)",
+    "German": "Transporter Range (Taludas)",
+    "Italian": "Transporter Range (Taludas)",
+    "Japanese": "Transporter Range (Taludas)",
+    "Korean": "Transporter Range (Taludas)",
+    "Polish": "Transporter Range (Taludas)",
+    "Russian": "Transporter Range (Taludas)",
+    "Spanish": "Transporter Range (Taludas)",
+    "Taiwanese": "Transporter Range (Taludas)"
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "Fixes HUGE transporter ranges on a plethora of DLC buildings like tree planters and chemical factories.",
+    "French": null,
+    "German": "Behebt die RIESIGEN Transporter-Reichweiten bei einer Vielzahl von DLC-Gebäuden wie Baumschulen und Chemiefabriken.",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues":
+  [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [
+    {
+			"DLC": "NewWorldRising",
+			"Dependant": "required"
+		},
+    {
+			"DLC": "HighLife",
+			"Dependant": "required"
+		}
+  ],
+  "CreatorName": "Taludas",
+  "CreatorContact": "https://github.com/Taludas/SmallModsCollection",
+  "Image": null
+}

@@ -1,0 +1,38 @@
+<ModOps>
+  
+  <!-- Reposition Needs for Product 120030 and 1010354. And add AdditionalGlobalUnlockRequirement 15000003 -->
+  
+  <!-- 1.0.0 to 1.0.1: Made the code more compatible to other mods -->
+  
+  <!-- add a copy of the entry with Product 120030 before entry with Product 5803 -->
+  <ModOp Type="addPrevSibling" GUID="5403" Content="/Values/PopulationLevel7/PopulationInputs/Item[Product='120030']" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5803']">
+    <ModOpContent/>
+  </ModOp>
+  <!-- Add AdditionalGlobalUnlockRequirement to all entries with Product 120030 (if no other mod added it already) -->
+  <ModOp Type="merge" GUID="5403" Condition="!/Values/PopulationLevel7/PopulationInputs/Item[Product='120030']/AdditionalGlobalUnlockRequirement" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='120030']">
+    <AdditionalGlobalUnlockRequirement>
+      <Population>15000003</Population>
+      <MinPopulationAmount>1</MinPopulationAmount>
+    </AdditionalGlobalUnlockRequirement>
+  </ModOp>
+  <!-- remove all entries with Product='120030' which are added after entries with Product 5803 -->
+  <ModOp Type="remove" GUID="5403" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5803']/following-sibling::Item[Product='120030']"></ModOp>
+  
+  
+  
+  <!-- add a copy of the entry with Product 1010354 before entry with Product 5381 -->
+  <ModOp Type="addPrevSibling" GUID="5403" Content="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010354']" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5381']">
+    <ModOpContent/>
+  </ModOp>
+  <!-- Add AdditionalGlobalUnlockRequirement to all entries with Product 1010354 (if no other mod added it already) -->
+  <ModOp Type="merge" GUID="5403" Condition="!/Values/PopulationLevel7/PopulationInputs/Item[Product='1010354']/AdditionalGlobalUnlockRequirement" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010354']">
+    <AdditionalGlobalUnlockRequirement>
+      <Population>15000003</Population>
+      <MinPopulationAmount>1</MinPopulationAmount>
+    </AdditionalGlobalUnlockRequirement>
+  </ModOp>
+  <!-- remove all entries with Product='1010354' which are added after entries with Product 5381 -->
+  <ModOp Type="remove" GUID="5403" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5381']/following-sibling::Item[Product='1010354']"></ModOp>
+  
+  
+</ModOps>

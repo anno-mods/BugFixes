@@ -1,0 +1,79 @@
+{
+  "Version": "1.0.0",
+  "ModID": "Taludas_UnhideArtistaOilChain",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "DeprecateIds": [
+  ],
+  "LoadAfterIds": [
+  ],
+  "ModioResourceId": null,
+  "Category": {
+    "Chinese": "Fix",
+    "English": "Fix",
+    "French": "Fix",
+    "German": "Fix",
+    "Italian": "Fix",
+    "Japanese": "Fix",
+    "Korean": "Fix",
+    "Polish": "Fix",
+    "Russian": "Fix",
+    "Spanish": "Fix",
+    "Taiwanese": "Fix"
+  },
+  "ModName": {
+    "Chinese": "Unhide Artista Oil Chain (Taludas)",
+    "English": "Unhide Artista Oil Chain (Taludas)",
+    "French": "Unhide Artista Oil Chain (Taludas)",
+    "German": "Unhide Artista Oil Chain (Taludas)",
+    "Italian": "Unhide Artista Oil Chain (Taludas)",
+    "Japanese": "Unhide Artista Oil Chain (Taludas)",
+    "Korean": "Unhide Artista Oil Chain (Taludas)",
+    "Polish": "Unhide Artista Oil Chain (Taludas)",
+    "Russian": "Unhide Artista Oil Chain (Taludas)",
+    "Spanish": "Unhide Artista Oil Chain (Taludas)",
+    "Taiwanese": "Unhide Artista Oil Chain (Taludas)"
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "Fixes the missing unhide of the Artista Oil Chain in the New World.",
+    "French": null,
+    "German": "Behebt das fehlende Unhide der Artista Ölkette in der Neuen Welt",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues":
+  [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [
+    {
+			"DLC": "NewWorldRising",
+			"Dependant": "required"
+		},
+    {
+			"DLC": "SeedsOfChange",
+			"Dependant": "required"
+		}
+  ],
+  "CreatorName": "Taludas",
+  "CreatorContact": "https://github.com/Taludas/SmallModsCollection",
+  "Image": null
+}

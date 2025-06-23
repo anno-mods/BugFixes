@@ -143,8 +143,20 @@
     </ModOp>
     
     <!-- FlakMonitor and Fire Monitor to All PlayerShips -->
+    <!-- And adding all "sale" ships you can buy -->
+    <!-- TODO: -->
+     <!-- assetpools playercounter pool die zb alle miltiärschiffe enthalten sollen,  -->
+      <!-- stattdessen von en itemeffectpools abkopieren lassen (und davor sicherstellen, dass diese vollständig sind) -->
+       <!-- denn sowohl spiel als auch modder legen mehr wert darauf, dass diese effectpools vollständig sind, als andere pools -->
+     <!-- effectpool 191454 ist auch ziemlich unvollsätndig... -->
     <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='720']">
+      <Item>
+        <Asset>720</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='720']">
       <Item>
         <Asset>720</Asset>
       </Item>
@@ -155,6 +167,133 @@
         <Asset>968</Asset>
       </Item>
     </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='968']">
+      <Item>
+        <Asset>968</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102427']">
+      <Item>
+        <Asset>102427</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102427']">
+      <Item>
+        <Asset>102427</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102420']">
+      <Item>
+        <Asset>102420</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102420']">
+      <Item>
+        <Asset>102420</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102421']">
+      <Item>
+        <Asset>102421</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102421']">
+      <Item>
+        <Asset>102421</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102419']">
+      <Item>
+        <Asset>102419</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102419']">
+      <Item>
+        <Asset>102419</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102422']">
+      <Item>
+        <Asset>102422</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102422']">
+      <Item>
+        <Asset>102422</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102423']">
+      <Item>
+        <Asset>102423</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102423']">
+      <Item>
+        <Asset>102423</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102455']">
+      <Item>
+        <Asset>102455</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102455']">
+      <Item>
+        <Asset>102455</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102428']">
+      <Item>
+        <Asset>102428</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102428']">
+      <Item>
+        <Asset>102428</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='102425']">
+      <Item>
+        <Asset>102425</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='102425']">
+      <Item>
+        <Asset>102425</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+      Condition="!~/Values/AssetPool/AssetList/Item[Asset='1537']">
+      <Item>
+        <Asset>1537</Asset>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='700155,119965' Path="/Values/PlayerCounterContextPool/Contexts"
+      Condition="!~/Values/PlayerCounterContextPool/Contexts/Item[Asset='1537']">
+      <Item>
+        <Asset>1537</Asset>
+      </Item>
+    </ModOp>
+    
     
     <!-- Add Passage Airship (Trade) to All AirShips -->
     <ModOp Type="add" GUID='102492' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"

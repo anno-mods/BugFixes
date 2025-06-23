@@ -1,0 +1,6 @@
+<ModOps>
+    <ModOp Type="merge" Path="//Asset[Template='FactoryBuilding7' or Template='FactoryBuilding7_BuildPermit' or Template='FarmBuilding' or Template='RecipeFarm' or Template='FarmBuilding_Electrifiable' or Template='FreeAreaBuilding' or Template='HeavyFreeAreaBuilding' or Template='HeavyFactoryBuilding' or Template='Multifactory' or Template='FreeAreaRecipeBuilding' or Template='FactoryBuilding7_Arctic' or Template='FarmBuilding_Arctic' or Template='FreeAreaBuilding_Arctic' or Template='HeavyFreeAreaBuilding_Arctic' or Template='SlotFactoryBuilding7' or Template='SlotFactoryBuilding7_Arctic']/Values/FactoryBase">
+        <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
+        <ClampedMaxTransporterLogisticCost>68</ClampedMaxTransporterLogisticCost>
+    </ModOp>
+</ModOps>

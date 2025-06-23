@@ -1,0 +1,36 @@
+<ModOps>
+
+  <!-- 1.0.0 to 1.0.1: Made the code more compatible to other mods which possibly could change eg the CounterAmount or add SubTriggers themself  -->
+
+  <!-- merge does not replace in this case, but add if it does not exist -->
+  <ModOp Type="merge" GUID="25056" Path="/Values/Trigger">
+    <SubTriggers/>
+  </ModOp>
+  
+  <ModOp Type="add" GUID="25056" Path="/Values/Trigger/SubTriggers">
+    <Item>
+      <SubTrigger>
+        <Template>AutoCreateTrigger</Template>
+        <Values>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionIsDLCActive</Template>
+              <Values>
+                <Condition/>
+                <ConditionIsDLCActive>
+                  <DLCAssetList>
+                    <Item>
+                      <DLCAsset>24961</DLCAsset>
+                    </Item>
+                  </DLCAssetList>
+                </ConditionIsDLCActive>
+                <ConditionPropsNegatable/>
+              </Values>
+            </TriggerCondition>
+          </Trigger>
+        </Values>
+      </SubTrigger>
+    </Item>
+  </ModOp>
+  
+</ModOps>

@@ -12,6 +12,7 @@
     <ModOp Type="merge" GUID="132786,132777,135133,133533" Path="/Values/FactoryBase/FactoryInputs/Item" Condition="/Values/FactoryBase/FactoryInputs/Item[StorageAmount&lt;10]">
       <StorageAmount>10</StorageAmount>
     </ModOp>
+    <!-- (also done by Taludas_TransporterRange but does not hurt since we use conditions) -->
     <ModOp Type="merge" GUID="132786,132777,135133,133533" Path="/Values/FactoryBase" Condition="/Values/FactoryBase[FactoryOutputs/Item/StorageAmount and not(ClampedMaxTransporterLogisticCost)]">
       <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
       <ClampedMaxTransporterLogisticCost>67</ClampedMaxTransporterLogisticCost>
@@ -87,6 +88,20 @@
   </ModOp>
   <ModOp Type="merge" GUID='45' Condition="/Values/Trader/Progression/EarlyMidGame[not(ShipsForSaleAmount)]" Path="/Values/Trader/Progression/EarlyMidGame">  
     <ShipsForSaleAmount>1</ShipsForSaleAmount>
+  </ModOp>
+  
+  <!-- add royal liner 102427 to ShipsForSale from Harlow, if it is in LateMidGame and not yet in later progresslevels -->
+  <ModOp Type="add" GUID='73' Path="/Values/Trader/Progression/LateGame/ShipsForSale" Condition="/Values/Trader/Progression[(LateMidGame/ShipsForSale/Item/ShipAsset='102427') and not(LateGame/ShipsForSale/Item/ShipAsset='102427')]">  
+    <Item>
+      <ShipAsset>102427</ShipAsset>
+      <Weight>1</Weight>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID='73' Path="/Values/Trader/Progression/EndGame/ShipsForSale" Condition="/Values/Trader/Progression[(LateMidGame/ShipsForSale/Item/ShipAsset='102427') and not(EndGame/ShipsForSale/Item/ShipAsset='102427')]">  
+    <Item>
+      <ShipAsset>102427</ShipAsset>
+      <Weight>1</Weight>
+    </Item>
   </ModOp>
   
    
