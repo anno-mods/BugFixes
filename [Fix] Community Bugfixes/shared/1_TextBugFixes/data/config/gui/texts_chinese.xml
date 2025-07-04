@@ -18,7 +18,7 @@
       <Text><ModOpContent /></Text>
     </ModOp>
     
-    <!-- make the imperial kontors (Trading Post) visible in text (used as main kontor in a region, eg. for quests and maybe also for ships switching sessions) -->
+    <!-- make the imperial kontors (Trading Post) visible in text (used as main kontor in a region, eg. for quests and maybe also for ships switching sessions) -->
     <!-- TODO translation and then enable -->
     <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010540' or GUID = '101293' or GUID = '112865' or GUID = '114629']/Text"> -->
       <!-- <Text>Small Imperial Trading Post</Text> -->
@@ -76,7 +76,7 @@
     <!-- Adding missing text -->
     
     <!-- PlayerCounter Pools -->
-     <!-- usually used in Quest Goals, so like "destroy X" or "deliver X", so no "all" in front of it needed -->
+     <!-- usually used in Quest Goals, so like "destroy X" or "deliver X", so no "all" in front of it needed  -->
     
     
     <!-- translate/replace playercounter pools... original: Context Pool All Farmer Products -->

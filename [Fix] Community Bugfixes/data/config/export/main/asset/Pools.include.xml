@@ -149,6 +149,10 @@
       <!-- stattdessen von en itemeffectpools abkopieren lassen (und davor sicherstellen, dass diese vollständig sind) -->
        <!-- denn sowohl spiel als auch modder legen mehr wert darauf, dass diese effectpools vollständig sind, als andere pools -->
      <!-- effectpool 191454 ist auch ziemlich unvollsätndig... -->
+    <!-- Am besten manuell alle vanilla schiffe zufügen -->
+    
+    <ModOp Type="remove" GUID='700151,270174' Path="/Values/AssetPool/AssetList/Item[Probability=720]" Condition="/Values/AssetPool/AssetList/Item[Probability=720]"/>
+    
     <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='720']">
       <Item>

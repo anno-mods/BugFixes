@@ -4,6 +4,18 @@
     <!-- QUESTS -->
     <!-- ############################################################ -->
     
+    <!-- TODO: -->
+      <!-- Alle ActionDeleteObjects des Starter Schiffs zb in OnQuestDeclined usw.  -->
+       <!-- sind bullshit, vorallem da kein ObjectRestrictToQuestObjects dabei ist. (aktuell entfernt es weltweit alle Questschiffe, auch für andere Spieler) -->
+       <!-- Also entweder das zufügen oder einfach alle davon entfernen, weil das Starter Schiff schon von alleine die map verlässt -->
+        <!-- außer es ist <ObjectDespawn>StayOnMap</ObjectDespawn> im StarterObject definiert. -->
+      <!-- Wobei <ObjectDespawn>StayOnMap</ObjectDespawn> bei Starter Objekten auch absoluter Quatsch ist, außer evlt bei QuestLines -->
+       <!-- Bei Mercier sorgt das bei manchen Quests wohl dafür, dass sie unendlich seiner Schiffe sammeln. -->
+       <!-- Also auch diese Zeile überall entfernen. -->
+        <!-- und nach <PrebuiltObject>110688</PrebuiltObject> suchen (starter schiff) -->
+         <!-- und dies durch ConditoinSpawn ersetzen, damit neues starterschiff spawned -->
+    
+    
     <!-- There are several deliver quests from Ketema that asks you to send him goods with value of 100k and more, to get like 10k as reward... -->
     <!-- (this is more of a bugfix I think, cause other questgivers already have money amount=3 already defined for expensive deliver quests like this) -->
     <ModOp Type="merge" GUID="119041,119040,119038,119042,119043,119044" Path="/Values/Reward/RewardAssets/Item[1]">
