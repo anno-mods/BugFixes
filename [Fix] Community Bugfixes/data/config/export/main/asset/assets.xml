@@ -188,13 +188,13 @@
     <!-- make the VehicleBuff 191305 (slow down when hit by pucklegun) work on all ships (in vanilla it misses EffectTargets, so does not affect any ship) -->
     <!-- The description of the PuckleGun include that is slows ships and the projectile from the gun has this debuff, but still in vanilla it does not apply to any ship. So I think this is for sure a bug -->
     <!-- also other projectile buffs like chainshots/anarchy flag shots do not work (anymore?) in vanilla, since they have no targets defined -->
-    <ModOp Type="merge" GUID="191305,192003,110957,191954,191953,191614,6000032" Path="/Values/ItemEffect">
-      <EffectTargets />
-    </ModOp>
-    <ModOp Type="add" GUID="191305,192003,110957,191954,191953,191614,6000032" Path="/Values/ItemEffect/EffectTargets" Condition="!/Values/ItemEffect/EffectTargets/Item[GUID='1512']">
-      <Item>
-        <GUID>1512</GUID>
-      </Item>
+    <!-- Only adding the EffectTargets if no other mod already added it, to not mess with their target intentions -->
+    <ModOp Type="add" GUID="191305,192003,110957,191954,191953,191614,6000032" Path="/Values/ItemEffect" Condition="!/Values/ItemEffect/EffectTargets">
+      <EffectTargets>
+        <Item>
+          <GUID>1512</GUID>
+        </Item>
+      </EffectTargets>
     </ModOp>
     
     <!-- make the flamethrower items to actually cause fire (like mentioned in description) and be more efficient against wodden ships. also affects the pyro ships from campagin -->
@@ -219,6 +219,12 @@
       <CausedIncidentBuff>192004</CausedIncidentBuff>
       <CausedIncidentDuration>60000</CausedIncidentDuration>
     </ModOp>
+    <!-- also add it for all other fire projectiles? -->
+    <!-- <ModOp Type="merge" GUID="111134,1892,628" Path="/Values/ProjectileIncident" Condition="!/Values/ProjectileIncident[CausedIncident='Fire']"> -->
+      <!-- <CausedIncident>Fire</CausedIncident> -->
+      <!-- <CausedIncidentBuff>192004</CausedIncidentBuff> -->
+      <!-- <CausedIncidentDuration>60000</CausedIncidentDuration> -->
+    <!-- </ModOp> -->
     
     
     
