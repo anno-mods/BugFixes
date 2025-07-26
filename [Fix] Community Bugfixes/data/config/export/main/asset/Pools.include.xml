@@ -56,7 +56,7 @@
       </Item>
     </ModOp>
     
-    <!-- Adresse3233 all production except powerplant -->
+    <!-- Add missing to all production except powerplant (should not be a problem if duplicated) -->
   <ModOp GUID="193856" Type="add" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
       <Item>
 		<GUID>134619</GUID> <!-- Multifactory_Assembly_Blank -->

@@ -24,6 +24,7 @@
   "CreatorContact": "https://github.com/anno-mods/BugFixes",
   "ModioResourceId": 4346171,
   "changelog": {
-    "1.01" : "Add ModioResourceId and changelog to modinfo.json"
+    "1.01" : "Add ModioResourceId and changelog to modinfo.json",
+    "1.011" : "Release on mod.io"
   }
 }
