@@ -1,6 +1,17 @@
 <ModOps>
-    <ModOp Type="merge" Path="//Asset[Template='FactoryBuilding7' or Template='FactoryBuilding7_BuildPermit' or Template='FarmBuilding' or Template='RecipeFarm' or Template='FarmBuilding_Electrifiable' or Template='FreeAreaBuilding' or Template='HeavyFreeAreaBuilding' or Template='HeavyFactoryBuilding' or Template='Multifactory' or Template='FreeAreaRecipeBuilding' or Template='FactoryBuilding7_Arctic' or Template='FarmBuilding_Arctic' or Template='FreeAreaBuilding_Arctic' or Template='HeavyFreeAreaBuilding_Arctic' or Template='SlotFactoryBuilding7' or Template='SlotFactoryBuilding7_Arctic']/Values/FactoryBase">
+    
+    <!-- 1.0.1: -->
+    <!-- Only for Factories which Output is part of the StandardProductStorageList 120055 (to exclude buildings like Fuel Station) -->
+     <!-- (if output is not part of StandardProductStorageList the output is not transported to warehouses) -->
+    
+    <ModOp Type="merge" Path="//Asset[Template='FactoryBuilding7' or Template='FactoryBuilding7_BuildPermit' or Template='FarmBuilding' or Template='RecipeFarm' or Template='FarmBuilding_Electrifiable' or Template='FreeAreaBuilding' or Template='HeavyFreeAreaBuilding' or Template='HeavyFactoryBuilding' or Template='Multifactory' or Template='FreeAreaRecipeBuilding' or Template='FactoryBuilding7_Arctic' or Template='FarmBuilding_Arctic' or Template='FreeAreaBuilding_Arctic' or Template='HeavyFreeAreaBuilding_Arctic' or Template='SlotFactoryBuilding7' or Template='SlotFactoryBuilding7_Arctic']/Values/FactoryBase/FactoryOutputs/Item[Product=/AssetList/Groups/Group/Groups/Group/Groups/Group/Assets/Asset/Values[Standard/GUID='120055']/ProductStorageList/ProductList/Item/Product]">
         <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
         <ClampedMaxTransporterLogisticCost>68</ClampedMaxTransporterLogisticCost>
     </ModOp>
+    
+    <!-- <ModOp Type="merge" Path="//Asset[Template='FactoryBuilding7' or Template='FactoryBuilding7_BuildPermit' or Template='FarmBuilding' or Template='RecipeFarm' or Template='FarmBuilding_Electrifiable' or Template='FreeAreaBuilding' or Template='HeavyFreeAreaBuilding' or Template='HeavyFactoryBuilding' or Template='Multifactory' or Template='FreeAreaRecipeBuilding' or Template='FactoryBuilding7_Arctic' or Template='FarmBuilding_Arctic' or Template='FreeAreaBuilding_Arctic' or Template='HeavyFreeAreaBuilding_Arctic' or Template='SlotFactoryBuilding7' or Template='SlotFactoryBuilding7_Arctic']/Values/FactoryBase"> -->
+        <!-- <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost> -->
+        <!-- <ClampedMaxTransporterLogisticCost>68</ClampedMaxTransporterLogisticCost> -->
+    <!-- </ModOp> -->
+    
 </ModOps>
