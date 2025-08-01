@@ -109,6 +109,19 @@
       </Text>
     </ModOp>
     
+    
+    <!-- From Kurilas shared_range_distinction_kurila -->
+    <ModOp Type="add" Path="/TextExport/Texts">
+      <Text>
+        <GUID>12014</GUID>
+        <Text>Сфера черезвычайных служб</Text>
+      </Text>
+      <Text>
+        <GUID>2321</GUID>
+        <Text>Сфера государственных услуг</Text>
+      </Text>
+    </ModOp>
+    
     <!-- ################################################################# -->
     
     <!-- Add here fixes for typos only in this specific language: -->

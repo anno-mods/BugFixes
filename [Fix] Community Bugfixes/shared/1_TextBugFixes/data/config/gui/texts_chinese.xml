@@ -109,6 +109,19 @@
       </Text>
     </ModOp>
     
+    
+    <!-- From Kurilas shared_range_distinction_kurila -->
+    <ModOp Type="add" Path="/TextExport/Texts">
+      <Text>
+        <GUID>12014</GUID>
+        <Text>应急服务（消防局、医院、警局、消防救护站）范围</Text>
+      </Text>
+      <Text>
+        <GUID>2321</GUID>
+        <Text>公共服务范围</Text>
+      </Text>
+    </ModOp>
+    
     <!-- ################################################################# -->
     
     <!-- Add here fixes for typos only in this specific language: -->
