@@ -3,15 +3,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1999002241</GUID>
-      <Text>Cinnamon Grove</Text>
+      <Text>肉桂園</Text>
     </Text>
     <Text>
       <GUID>1999002251</GUID>
-      <Text>New World Orchards</Text>
+      <Text>新世界果園</Text>
     </Text>
     <Text>
       <GUID>1999002252</GUID>
-      <Text>Overview of the available Orchard seeds</Text>
+      <Text>可用果園種子總覽</Text>
     </Text>
   </ModOp>
 

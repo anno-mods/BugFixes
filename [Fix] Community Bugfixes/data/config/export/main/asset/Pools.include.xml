@@ -58,33 +58,33 @@
     
     <!-- Add missing to all production except powerplant (should not be a problem if duplicated) -->
   <ModOp GUID="193856" Type="add" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-      <Item>
-		<GUID>134619</GUID> <!-- Multifactory_Assembly_Blank -->
-      </Item>
-      <Item>
-		<GUID>134622</GUID> <!-- Multifactory_Assembly_Elevator -->
-      </Item>
-      <Item>
-		<GUID>135361</GUID> <!-- Multifactory_Assembly_Cookies -->
-      </Item>
-      <Item>
-		<GUID>135148</GUID> <!-- Multifactory_Assembly_Typewriter -->
-      </Item>
-      <Item>
-		<GUID>135295</GUID> <!-- Multifactory_Manufacturer_Blank -->
-      </Item>
-      <Item>
-		<GUID>135418</GUID> <!-- Multifactory_Manufacturer_Cognac -->
-      </Item>
-      <Item>
-		<GUID>135397</GUID> <!-- Multifactory_Manufacturer_Violin -->
-      </Item>
-      <Item>
-		<GUID>135407</GUID> <!-- Multifactory_Manufacturer_Billiard -->
-      </Item>
-      <Item>
-		<GUID>135669</GUID> <!-- Multifactory_Manufacturer_Toys -->
-      </Item>
+    <Item>
+      <GUID>134619</GUID> <!-- Multifactory_Assembly_Blank -->
+    </Item>
+    <Item>
+      <GUID>134622</GUID> <!-- Multifactory_Assembly_Elevator -->
+    </Item>
+    <Item>
+      <GUID>135361</GUID> <!-- Multifactory_Assembly_Cookies -->
+    </Item>
+    <Item>
+      <GUID>135148</GUID> <!-- Multifactory_Assembly_Typewriter -->
+    </Item>
+    <Item>
+      <GUID>135295</GUID> <!-- Multifactory_Manufacturer_Blank -->
+    </Item>
+    <Item>
+      <GUID>135418</GUID> <!-- Multifactory_Manufacturer_Cognac -->
+    </Item>
+    <Item>
+      <GUID>135397</GUID> <!-- Multifactory_Manufacturer_Violin -->
+    </Item>
+    <Item>
+      <GUID>135407</GUID> <!-- Multifactory_Manufacturer_Billiard -->
+    </Item>
+    <Item>
+      <GUID>135669</GUID> <!-- Multifactory_Manufacturer_Toys -->
+    </Item>
   </ModOp>
   
   
@@ -115,6 +115,33 @@
       Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='1353']">
       <Item>
         <GUID>1353</GUID>
+      </Item>
+    </ModOp>
+    <!-- DLC8 Restaurants (other Restaurants are already in there), thanks "Dark Listener" for the hint -->
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='6136']">
+      <Item>
+        <GUID>6136</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='6137']">
+      <Item>
+        <GUID>6137</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='6138']">
+      <Item>
+        <GUID>6138</GUID>
+      </Item>
+    </ModOp>
+    
+    <!-- add arctic airship platform to same fitting pools like other airship platforms -->
+    <ModOp Type="add" GUID='193480,4278' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='4258']">
+      <Item>
+        <GUID>4258</GUID>
       </Item>
     </ModOp>
    
@@ -869,5 +896,6 @@
     <!-- not sure if adding all quest related ships also to the "combat effects" pool is a bugfix... -->
     <!-- I think it is better to not add them, only if we need it for a mod, see AI Buffed GeneralEnemy (Serp) Mod -->
     
+
 
 </ModOps>

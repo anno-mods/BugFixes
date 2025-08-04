@@ -136,6 +136,10 @@
       <Text>Abschlepp-Malus</Text>
     </ModOp>
     
+    <!-- Original: <Text>„Schalcht von Trelawney“-​Ausstellung</Text> -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '193407']/Text">
+      <Text>„Schlacht von Trelawney“-​Ausstellung</Text>
+    </ModOp>
     
     
 </ModOps>

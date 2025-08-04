@@ -1,10 +1,10 @@
 <ModOps>
   
-    <!-- I use "ModOpContent" whenever possible, to use an already existing text (to save translation work) -->
+    <!-- Utilicé "ModOpContent" siempre que fue posible, para utilizar un texto ya existente (para ahorrar trabajo de traducción). -->
 
-    <!-- clarify that the region, not the session is ment (in vanilla they are named the same -.-) -->
-     <!-- some people dont like real-world names like Europe/America.., so we will instead use vanilla names which include "Region:..." -->
-      <!-- (using ModOpContent instead of AssetData because AssetData does not work everywhere) -->
+    <!-- aclarar que se trata de la región, no de la sesión (en vainilla se llaman igual) -.-) -->
+     <!-- A algunas personas no les gustan los nombres del mundo real como Europa/América... así que usaremos nombres comunes que incluyan "Región":..." -->
+      <!-- (usando ModOpContent en lugar de AssetData porque AssetData no funciona en todas partes) -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '5000000']/Text" Content="/TextExport/Texts/Text[GUID = '113322']/Text/text()">
       <Text><ModOpContent /></Text>
     </ModOp>
@@ -18,20 +18,19 @@
       <Text><ModOpContent /></Text>
     </ModOp>
     
-    <!-- make the imperial kontors (Trading Post) visible in text (used as main kontor in a region, eg. for quests and maybe also for ships switching sessions) -->
-    <!-- TODO translation and then enable -->
-    <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010540' or GUID = '101293' or GUID = '112865' or GUID = '114629']/Text"> -->
-      <!-- <Text>Small Imperial Trading Post</Text> -->
-    <!-- </ModOp> -->
-    <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '100514' or GUID = '101294' or GUID = '112866' or GUID = '114630']/Text"> -->
-      <!-- <Text>Medium Imperial Trading Post</Text> -->
-    <!-- </ModOp> -->
-    <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '100515' or GUID = '101295' or GUID = '112867' or GUID = '114631']/Text"> -->
-      <!-- <Text>Large Imperial Trading Post</Text> -->
-    <!-- </ModOp> -->
-    <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '269879']/Text"> -->
-      <!-- <Text>Grand Imperial Trading Post</Text> -->
-    <!-- </ModOp> -->
+    <!-- Hacer visibles en el texto los kontors imperiales (puesto comercial) (usados como kontor principal en una región, p. ej. para misiones y quizás también para sesiones de cambio de barcos) -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '1010540' or GUID = '101293' or GUID = '112865' or GUID = '114629']/Text">
+      <Text>Pequeño Puesto Comercial Imperial</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '100514' or GUID = '101294' or GUID = '112866' or GUID = '114630']/Text">
+      <Text>Puesto Comercial Imperial Mediano</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '100515' or GUID = '101295' or GUID = '112867' or GUID = '114631']/Text">
+      <Text>Puesto Comercial Imperial Grande</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '269879']/Text">
+      <Text>Puesto Comercial Imperial Grande</Text>
+    </ModOp>
     
     <!-- ############################################### -->
     
@@ -81,23 +80,23 @@
     
     <!-- translate/replace playercounter pools... original: Context Pool All Farmer Products -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700052']/Text">
-      <Text>Farmer Goods</Text>
+      <Text>Bienes de agricultores</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700053']/Text">
-      <Text>Workers Goods</Text>
+      <Text>Bienes de trabajadores</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700054']/Text">
-      <Text>Artisans Goods</Text>
+      <Text>Bienes de artesanos</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700139']/Text">
-      <Text>Engineers Goods</Text>
+      <Text>Bienes de ingenieros</Text>
     </ModOp>
     
     <!-- add translation for All Pirate Ships PlayerCounterPool -->
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '700138']">
       <Text>
         <GUID>700138</GUID>
-        <Text>Pirate Ships</Text>
+        <Text>Barcos piratas</Text>
       </Text>
     </ModOp>
     
@@ -105,21 +104,21 @@
       <!-- seems this one has no text entry yet?! add it (does not hurt if added multiple times, the last entry will be used): CP - All PlayerShips -->
       <Text>
         <GUID>700155</GUID>
-        <Text>Ships from Competitors</Text>
+        <Text>Barcos de competidores</Text>
       </Text>
     </ModOp>
     
     
     <!-- From Kurilas shared_range_distinction_kurila -->
     <ModOp Type="add" Path="/TextExport/Texts">
-      <!-- <Text> -->
-        <!-- <GUID>12014</GUID> -->
-        <!-- <Text>Range of Emergency Forces</Text> -->
-      <!-- </Text> -->
-      <!-- <Text> -->
-        <!-- <GUID>2321</GUID> -->
-        <!-- <Text>Range of Public Services</Text> -->
-      <!-- </Text> -->
+      <Text>
+        <GUID>12014</GUID>
+        <Text>Alcance de las Fuerzas de Emergencia</Text>
+      </Text>
+      <Text>
+        <GUID>2321</GUID>
+        <Text>Alcance de los Servicios Públicos</Text>
+      </Text>
     </ModOp>
     
     <!-- ################################################################# -->

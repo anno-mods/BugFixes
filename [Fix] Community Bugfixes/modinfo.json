@@ -1,5 +1,5 @@
 {
-  "Version": "1.015",
+  "Version": "1.016",
   "ModID": "Community_Patch",
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
@@ -29,6 +29,7 @@
     "1.012" : "New mod.io ID because of bug (because it was hidden previously)",
     "1.013" : "Update 'Taludas_TransporterRange' to only clamp the transporter range for buildings in StandardStorageList (eg. to exclude Fuel Station)",
     "1.014" : "Update TooltipBugFixes (an incident resolver buff was no longer displayed, fixed)",
-    "1.015" : "Update TooltipBugFixes (in rare cases shown percentage for buffs was 0)."
+    "1.015" : "Update TooltipBugFixes (in rare cases shown percentage for buffs was 0).",
+    "1.016" : "Add some translations thx MaxCheng95 and Satanoy Risopatrón Echenique (feel free to contribute your language), add a few more small bugfixes (missing pools and typos) thanks Dark Listener."
   }
 }
