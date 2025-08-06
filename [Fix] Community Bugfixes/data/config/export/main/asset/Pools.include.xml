@@ -136,6 +136,21 @@
         <GUID>6138</GUID>
       </Item>
     </ModOp>
+    <!-- Add VisitorPiers (only New World one is in list in vanilla) -->
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='100429']">
+      <Item>
+        <GUID>100429</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='133890']">
+      <Item>
+        <GUID>133890</GUID>
+      </Item>
+    </ModOp>
+    
+    
     
     <!-- add arctic airship platform to same fitting pools like other airship platforms -->
     <ModOp Type="add" GUID='193480,4278' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"

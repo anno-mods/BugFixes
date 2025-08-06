@@ -1,0 +1,85 @@
+<ModOps>
+  <!-- # Storage -->
+  <!-- [Selection Object Area Economy StorageTrend([RefGuid]) &gt;&gt; productDelta] -->
+  <ModOp Type="addPrevSibling"
+    Path="//InfoTipData[Guid='25000205']/InfoElement/InfoElement[InfoElement/Text/TextGUID='11476']">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>2</ChildCount>
+        <!-- can be produced -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType />
+          <ExpectedValueBool>False</ExpectedValueBool>
+          <Condition>[ProductAssetData([RefGuid]) IsAbstract]</Condition>
+        </VisibilityElement>
+        <!-- has more than 0 storage -->
+        <!-- is unlocked -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>1</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType />
+            <ExpectedValueBool>False</ExpectedValueBool>
+            <Condition>[Selection Object Area Economy NeedLocked({PopulationGuid}, [RefGuid])]</Condition>
+          </VisibilityElement>
+          <OperatorType />
+        </VisibilityElement>
+        <CompareOperator />
+      </VisibilityElement>
+      <!-- headline "Storage"-->
+      <InfoElement>
+        <ElementType>5</ElementType>
+        <Text>
+          <TextGUID>163019</TextGUID>
+          <Style />
+        </Text>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <!-- product icon, trend, current/max -->
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <OperatorType />
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData([RefGuid]) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend([RefGuid])]) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Area Economy StorageAmount([RefGuid]) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity([RefGuid]) &gt;&gt; storagegood]</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>6</ElementType>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+    </InfoElement>
+  </ModOp>
+</ModOps>

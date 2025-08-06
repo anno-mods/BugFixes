@@ -1,0 +1,45 @@
+{
+  "Version": "1.0.2",
+  "ModID": "infotip-jakob",
+  "Category": {
+    "English": "UI",
+    "Chinese": "UI",
+    "French": "UI",
+    "German": "UI",
+    "Italian": "UI",
+    "Japanese": "UI",
+    "Korean": "UI",
+    "Polish": "UI",
+    "Russian": "UI",
+    "Spanish": "UI",
+    "Taiwanese": "UI"
+  },
+  "ModName": {
+    "English": "Improved Infotips (Jakob)",
+    "Chinese": "Improved Infotips (Jakob)",
+    "French": "Improved Infotips (Jakob)",
+    "German": "Improved Infotips (Jakob)",
+    "Italian": "Improved Infotips (Jakob)",
+    "Japanese": "Improved Infotips (Jakob)",
+    "Korean": "Improved Infotips (Jakob)",
+    "Polish": "Improved Infotips (Jakob)",
+    "Russian": "Improved Infotips (Jakob)",
+    "Spanish": "Improved Infotips (Jakob)",
+    "Taiwanese": "Improved Infotips (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods",
+  "Description": {
+    "English": "file::README.md",
+    "Chinese": "file::README.md",
+    "French": "file::README.md",
+    "German": "file::README.md",
+    "Italian": "file::README.md",
+    "Japanese": "file::README.md",
+    "Korean": "file::README.md",
+    "Polish": "file::README.md",
+    "Russian": "file::README.md",
+    "Spanish": "file::README.md",
+    "Taiwanese": "file::README.md"
+  }
+}

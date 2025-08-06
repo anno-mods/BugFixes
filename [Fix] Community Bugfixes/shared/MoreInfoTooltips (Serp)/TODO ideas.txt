@@ -1,0 +1,21 @@
+
+..
+
+..
+"Die benötigte Ware kann hier produziert werden" tooltip beim hovern über ware im population GUI.
+ die DLCs die nötig sind, werden nicht sinnvoll felistet, da steht dann:
+ Alte Welt
+  "Land der Löwen"
+ Neue Welt
+Wobei dadurch nicht klar wird, dass sich Land der Löwen auf alte welt bezieht. Daher evlt eher so schreiben:
+ Alte Welt (DLC: Land der Löwen)
+ oder wenns multiline sein soll:
+ DLC: Land der Löwen: 
+  Alte Welt
+siehe in infotips: <Condition>[ToolOneHelper IsProductInProductionRegionList([RefGuid], 5000000)]</Condition>
+ist aber eig nicht so sonderlich wichtig
+
+...
+
+
+
