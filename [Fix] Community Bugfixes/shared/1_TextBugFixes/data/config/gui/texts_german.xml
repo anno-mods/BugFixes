@@ -141,6 +141,16 @@
       <Text>„Schlacht von Trelawney“-​Ausstellung</Text>
     </ModOp>
     
+    <!-- order the fertility text the same like all other fertilities -->
+    <!-- Original: Fruchtbarkeit, Kräuter -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '6250']/Text">
+      <Text>Kräuter-Fruchtbarkeit</Text>
+    </ModOp>
+    <!-- Original: Fruchtbarkeit, Orchideen -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '6251']/Text">
+      <Text>Orchideen-Fruchtbarkeit</Text>
+    </ModOp>
+    
     
 </ModOps>
 
