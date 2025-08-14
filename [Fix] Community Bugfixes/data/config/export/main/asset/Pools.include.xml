@@ -1,13 +1,5 @@
 <ModOps>
-    
-
-    <!-- TODO: -->
-    <!-- test if hacienda and its buildings are affected by optimization influece buff. -->
-     <!-- if not add them to <GUID>368</GUID> <Name>all buildings with maintenance DLC11</Name> -->
-      <!-- 2534 hacienda upkeep buildings -->
-       <!-- hacienda : 24768 -->
-    
-    
+       
 
 
     <!-- Adding GUIDs to various pools they should belong to -->
@@ -147,6 +139,13 @@
       Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='133890']">
       <Item>
         <GUID>133890</GUID>
+      </Item>
+    </ModOp>
+    <!-- Hacienda main building -->
+    <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs"
+      Condition="!/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='24768']">
+      <Item>
+        <GUID>24768</GUID>
       </Item>
     </ModOp>
     

@@ -231,6 +231,16 @@
     <ModOp Type="merge" GUID="133361" Path="/Values/Text">
       <TextOverride>133898</TextOverride>
     </ModOp>
-
+    
+    
+    <!-- Add Identifier to included CycleShipSkins mod keybind, if not already done by another mod. -->
+    <!-- this way we can get the keys in text with: [ShortcutManager ShortcutTooltip(changeskin_pnski)] -->
+    <ModOp Type="add" GUID='2001271' Path="/Values/GUIConfig/KeyBindings/Item[Text='1600000046']" Condition="/Values/GUIConfig/KeyBindings/Item[Text='1600000046' and not(Identifier)]">
+      <Identifier>changeskin_pnski</Identifier>
+    </ModOp>
+    <!-- and add identifier for the vanilla skin-tool -->
+    <ModOp Type="add" GUID='2001271' Path="/Values/GUIConfig/KeyBindings/Item[Command='game.startMouseMode(24507)']" Condition="/Values/GUIConfig/KeyBindings/Item[Command='game.startMouseMode(24507)' and not(Identifier)]">
+      <Identifier>start_tool_skin</Identifier>
+    </ModOp>
 
 </ModOps>
