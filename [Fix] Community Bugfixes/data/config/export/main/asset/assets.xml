@@ -6,7 +6,16 @@
     <!-- fixing Quests -->
     <Include File="./Quests.include.xml" />
 
-
+      
+    <!-- allow incidents for Mercier  (yes he is immune to all of them in vanilla)-->
+      <!-- other modders/user say they better dont want to mess with AI, so this fix is not added for now (outcommented) -->
+    <!-- <ModOp Type="merge" GUID='2001023' Path="/Values/GeneralIncidentConfiguration/ParticipantIncidents"> -->
+      <!-- <Second_ai_11_Mercier> -->
+        <!-- <allowIncidents>1</allowIncidents> -->
+      <!-- </Second_ai_11_Mercier> -->
+    <!-- </ModOp> -->
+    
+    
     <!-- Increase the StorageAmount from all Multifactory_Chemical and limit their transporter range to sane amounts -->
       <!-- (at least the Clamp code might be good for nearly every buildings, but we don't want to mess with too many buildings in this bugfix mod, only with the ones where vanilla is critical. Since we dont want to mess with the current build of savegames too much) -->
     <ModOp Type="merge" GUID="132786,132777,135133,133533" Path="/Values/FactoryBase/FactoryInputs/Item" Condition="/Values/FactoryBase/FactoryInputs/Item[StorageAmount&lt;10]">

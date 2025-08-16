@@ -14,6 +14,36 @@
       <AttackableType>IslandBuilding</AttackableType> 
   </ModOp>
   
+  
+  <!-- allow incidents for Mercier  (yes he is immune to all of them in vanilla)-->
+      <!-- other modders/user say they better dont want to mess with AI, so this fix is not added for now -->
+    <ModOp Type="merge" GUID='2001023' Path="/Values/GeneralIncidentConfiguration/ParticipantIncidents">
+      <Second_ai_11_Mercier>
+        <allowIncidents>1</allowIncidents>
+      </Second_ai_11_Mercier>
+    </ModOp>
+  
+  
+  <!-- add arctic workforce and 3rd workforce from new world to the workforce newspaper buff -->
+  <!-- if same workforce is added multiple times, the effect is done multiple times, so make sure its only once -->
+  <ModOp Type="add" GUID="111251" Condition="!/Values/NewspaperArticle/ArticleEffects/Item[ArticleEffect='Workforce']/ContextGuids[Item/Context='112653']" Path="/Values/NewspaperArticle/ArticleEffects/Item[ArticleEffect='Workforce']/ContextGuids">
+    <Item>
+      <Context>112653</Context>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="111251" Condition="!/Values/NewspaperArticle/ArticleEffects/Item[ArticleEffect='Workforce']/ContextGuids[Item/Context='112654']" Path="/Values/NewspaperArticle/ArticleEffects/Item[ArticleEffect='Workforce']/ContextGuids">
+    <Item>
+      <Context>112654</Context>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="111251" Condition="!/Values/NewspaperArticle/ArticleEffects/Item[ArticleEffect='Workforce']/ContextGuids[Item/Context='5406']" Path="/Values/NewspaperArticle/ArticleEffects/Item[ArticleEffect='Workforce']/ContextGuids">
+    <Item>
+      <Context>5406</Context>
+    </Item>
+  </ModOp>
+  
+  <!-- make newspaper also active in arctic, vanilla: Moderate;Colony01;Africa (Mod regions should add themself to this) -->
+  <ModOp Type="add" GUID="140066" Path="/Values/NewspaperBalancing/ActiveInRegion">;Arctic</ModOp>
 
     
     <!-- Dont allow Flak to shoot at ground targets! This was added by devs to allow military items like mortar to do ground damage when equipped on Flak Monitor -->
