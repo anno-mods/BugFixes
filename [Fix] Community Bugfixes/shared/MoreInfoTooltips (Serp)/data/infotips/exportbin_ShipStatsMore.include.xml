@@ -5,7 +5,7 @@
     <!-- or download it in anno modding discord here: -->
     <!-- https://discord.com/channels/578443209940926465/1146098268850376816/1149910673678159964 -->
 
-
+  <!-- important: https://github.com/anno-mods/modding-guide/blob/main/documentation/infotips.md#does-not-have-property-check -->
   
   <!-- ############################################### -->
   
@@ -34,6 +34,51 @@
           <ElementType>
             <ElementType>2</ElementType>
           </ElementType>
+          <ChildCount>1</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType />
+            <Condition>[Selection Picked Nameable]</Condition>
+          </VisibilityElement>
+          <OperatorType />
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData([RefGuid]) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[MetaObjects SessionGameObject([RefOid]) Nameable Name]</Text>
+          <Style />
+        </Text>
+        <SubText>
+          <Text>[AssetData([RefGuid]) Text]</Text>
+          <Style />
+        </SubText>
+        <Value>
+          <Style />
+        </Value>
+        <BackgroundType />
+      </InfoElement>
+      <!-- we can not check "does not have Nameable" unfortunately.. -->
+      <!-- Buidlings usually have no name (no way to check for "Building" so using "Culture" for now) -->
+      <InfoElement>
+        <ElementType>1</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>1</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType />
+            <Condition>[Selection Picked Culture]</Condition>
+          </VisibilityElement>
           <OperatorType />
         </VisibilityElement>
         <Icon>
@@ -44,10 +89,6 @@
           <Text>[AssetData([RefGuid]) Text]</Text>
           <Style />
         </Text>
-        <SubText>
-          <Text>[MetaObjects SessionGameObject([RefOid]) Nameable Name]</Text>
-          <Style />
-        </SubText>
         <Value>
           <Style />
         </Value>
