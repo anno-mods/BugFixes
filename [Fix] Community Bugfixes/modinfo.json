@@ -1,5 +1,5 @@
 {
-  "Version": "1.021",
+  "Version": "1.0221",
   "ModID": "Community_Patch",
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
@@ -35,6 +35,8 @@
     "1.018" : "Adjust 2 german texts.\nImprove the formatting for the current money value in buildcost tooltip, so big amounts are rounded.\nAdd the available amounts also to UpgradeCosts.",
     "1.019" : "Add mod -Hotkey Cycle Ship Skins- from pnski to inlucded mods: Use Shift+Alt+V to cycle through skins of the selected objects.\nUpdated included mod -MoreInfoTooltips-:\n- Add keybind to toggle the infotip when hovering over ship objects in the world off/on (Ctrl+I).\n- Show the Cargo of ships when hovering over them also for allied or spied (sabotage mod) players.\n- Show the buff description from socketed items only for foreign ships (never for own ships) if you spied on them (sabotage mod).\n- Unify the display list of cargo/sockets to always show them below eachother with text, like the vanilla Expedition Tooltip from ships does.\n- If the hovered ship is neither your own, nor from an ally, nor from a spied one, then only display the default stats of this shiptype, not the real ones (so no buffs are considered)",
     "1.020" : "Update included TooltipBugFixes mod: \n- several wrong icon/text bugfixes for newspaper effects and also display positive/negative values\n- add support to display researchpoint generation for all populations in the researchpoints tooltip",
-    "1.021" : "Update included MoreInfoTooltips mod: \n- Swap the Text and Name of Ships in the header of the tooltip when hovering over the ships directly."
+    "1.021" : "Update included MoreInfoTooltips mod: \n- Swap the Text and Name of Ships in the header of the tooltip when hovering over the ships directly.",
+    "1.022" : "Add my new mod 'shared_ItemsetTooltip': Hovering over uncompleted ItemSets in your ItemSet-Overview will show you the buffscope (island or session wide) and buff effects (with buff targets) you will reveice when completing the set (in vanilla you dont see the buffs before completing it). ItemSets changed by mods also display the proper tooltip if loaded before 'shared_ItemsetTooltip_Serp'. To make new mod ItemSets also display the buff, see assets.xml of that shared mod for explanation.\nUpdate 'TooltipBugFixes_Serp': Buffs which add more Resolvers for Incidents now only display that once eg. '+1 Doctor', not 2 times anymore.",
+    "1.0221" : "Fix syntax error in my code from latest TooltipBugFixes update (did no harm except not fixing a vanilla bug)."
   }
 }
