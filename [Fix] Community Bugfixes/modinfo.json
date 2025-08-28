@@ -1,5 +1,5 @@
 {
-  "Version": "1.0221",
+  "Version": "1.0222",
   "ModID": "Community_Patch",
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
@@ -37,6 +37,7 @@
     "1.020" : "Update included TooltipBugFixes mod: \n- several wrong icon/text bugfixes for newspaper effects and also display positive/negative values\n- add support to display researchpoint generation for all populations in the researchpoints tooltip",
     "1.021" : "Update included MoreInfoTooltips mod: \n- Swap the Text and Name of Ships in the header of the tooltip when hovering over the ships directly.",
     "1.022" : "Add my new mod 'shared_ItemsetTooltip': Hovering over uncompleted ItemSets in your ItemSet-Overview will show you the buffscope (island or session wide) and buff effects (with buff targets) you will reveice when completing the set (in vanilla you dont see the buffs before completing it). ItemSets changed by mods also display the proper tooltip if loaded before 'shared_ItemsetTooltip_Serp'. To make new mod ItemSets also display the buff, see assets.xml of that shared mod for explanation.\nUpdate 'TooltipBugFixes_Serp': Buffs which add more Resolvers for Incidents now only display that once eg. '+1 Doctor', not 2 times anymore.",
-    "1.0221" : "Fix syntax error in my code from latest TooltipBugFixes update (did no harm except not fixing a vanilla bug)."
+    "1.0221" : "Fix syntax error in my code from latest TooltipBugFixes update (did no harm except not fixing a vanilla bug).",
+    "1.0222" : "Update included mod 'Repair All Ruins Key (Serp)' to make sure it does not upgrade buildings to next tier."
   }
 }
