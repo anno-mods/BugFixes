@@ -178,5 +178,23 @@
     </Asset>
   </ModOp>
   
+  <!-- #### -->
+  
+  <!-- Fix Vanilla Quest Bug from Quest 152691 ('Cruise Control' by Gasparov):  -->
+    <!-- After the second escort the Quest suddenly asks to deliver 0t of undefined, which makes no sense. Fixed. -->
+  <!-- The devs forgot to add ConditionPropsExecutionPlaceSettings/ConditionObjectAnywhere to the second escort (the first and third do have it) -->
+  
+  <ModOp Type="merge" GUID="152691" Path="/Values/Objectives/WinConditions/Item[2]/Objective/Values">
+    <ConditionPropsExecutionPlaceSettings>
+      <ExecutionPlace>
+        <Template>ConditionObjectAnywhere</Template>
+        <Values>
+          <ConditionObjectAnywhere />
+        </Values>
+      </ExecutionPlace>
+      <ExecutionPlaceConfirmOnReached>0</ExecutionPlaceConfirmOnReached>
+    </ConditionPropsExecutionPlaceSettings>
+  </ModOp>
+
 
 </ModOps>
