@@ -195,6 +195,113 @@
       <ExecutionPlaceConfirmOnReached>0</ExecutionPlaceConfirmOnReached>
     </ConditionPropsExecutionPlaceSettings>
   </ModOp>
+  
+  <!-- ########################### -->
 
+  <!-- Photography Quests get automatically aborted by the game when any object you have to Photograph gets destroyed, even if others to Photograph are still there. -->
+   <!-- I see no way to prevent the abortion, because it is done outside of xml. -->
+   <!-- But at least for Quests without a timelimit, so Quests you are not supposed to fail, we will start them again if they are aborted internally -->
+   <!-- Photography Quests which no timelimit: 105406,119884,119924,119925,123955,128923,128926,129675,131501,132095,133232,136264,137304,150846,153175,153177,153178,269854,816 -->
+    <!-- abortable: 153175,153177 -->
+    <!-- The ones where you have to Photography sth. that can be destroyed: 119884,119925,137304,150846,269854 (AlwaysFalse so not enabled: 153175,153178) -->
+  
+  <!-- OnQuestDiscarded: Callback when the quest has been automatically aborted by the system. Gets called before OnQuestEnd. -->
+  <ModOp Type="merge" GUID="119884,119925,137304,150846,269854" Path="/Values/Quest">
+    <OnQuestDiscarded>
+      <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+      <Values>
+        <ActionList>
+          <Actions />
+        </ActionList>
+      </Values>
+    </OnQuestDiscarded>
+  </ModOp>
+  <!-- make them rstart 10 seconds later -->
+  <ModOp Type="add" GUID="119884,119925,137304,150846,269854" Condition="!/Values/Quest/OnQuestDiscarded/Values/ActionList/Actions/Item/Action/Values/ActionDelayedActions/DelayedActions/Values/ActionList/Actions/Item/Action/Values/ActionStartQuest[Quest='119884']" Path="/Values/Quest/OnQuestDiscarded/Values/ActionList/Actions" Content="/Values/Standard/GUID/text()">
+    <Item>
+      <Action>
+        <Template>ActionDelayedActions</Template>
+        <Values>
+          <Action />
+          <ActionDelayedActions>
+            <ExecutionDelay>10000</ExecutionDelay>
+            <DelayedActions>
+              <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+              <Values>
+                <ActionList>
+                  <Actions>
+                    <Item>
+                      <Action>
+                        <Template>ActionStartQuest</Template>
+                        <Values>
+                          <Action />
+                          <ActionStartQuest>
+                            <Quest>
+                              <ModOpContent></ModOpContent>
+                            </Quest>
+                            <InheritQuestArea>1</InheritQuestArea>
+                            <InheritQuestSession>1</InheritQuestSession>
+                            <InheritQuestObjects>1</InheritQuestObjects>
+                          </ActionStartQuest>
+                        </Values>
+                      </Action>
+                    </Item>
+                  </Actions>
+                </ActionList>
+              </Values>
+            </DelayedActions>
+          </ActionDelayedActions>
+        </Values>
+      </Action>
+    </Item>
+  </ModOp>
+  
+  <!-- Ketema asks to photograph a kontor from old world. Make it use the Pool of moderate kontors, instead of listing each vanilla one by one. -->
+   <!-- this way also mods kontors are supported -->
+  <ModOp Type="replace" GUID="119884" Path="/Values/Objectives/WinConditions">
+    <WinConditions>
+      <Item>
+        <Objective>
+          <Template>PhotographyObjective</Template>
+          <Values>
+            <ConditionQuestObjective>
+              <TextCombinedContextValue>119885</TextCombinedContextValue>
+              <QuestTrackerIcon>data/ui/2kimages/main/3dicons/icon_kontor_main.png</QuestTrackerIcon>
+            </ConditionQuestObjective>
+            <ConditionQuestPhotography>
+              <PhotographyObjectList>
+                <Item>
+                  <Entry>
+                    <Template>ConditionObjectPrebuiltObject</Template>
+                    <Values>
+                      <ConditionObjectPrebuiltObject>
+                        <PrebuiltObject>135063</PrebuiltObject>
+                        <PrebuiltObjectCheckOwner>1</PrebuiltObjectCheckOwner>
+                        <PrebuiltUseProcessingParticipant>1</PrebuiltUseProcessingParticipant>
+                      </ConditionObjectPrebuiltObject>
+                      <ConditionScanner />
+                      <ConditionObjectiveSignsAndFeedback />
+                    </Values>
+                  </Entry>
+                </Item>
+              </PhotographyObjectList>
+            </ConditionQuestPhotography>
+            <ConditionPropsExecutionPlaceSettings />
+          </Values>
+        </Objective>
+      </Item>
+    </WinConditions>
+  </ModOp>
+  
+  <!-- ########################## -->
+
+  <!-- Several "Jump To" ShowOnlyFakePings are not working in the game for several Quests -->
+  <!-- It seems to be caused by using ShowMinimapToken=0, so we will set this to 0 and instead MinimapToken=0. -->
+  <!-- Works fine (eg Quests 102911,102912,103841), but does not fix eg. Quest 102988, which tries to jumpto Bauxit-Slot 1372. But this is because of the Bauxit-Slot is buggy, for Goldmine 1309 it works. -->
+   <!-- I guess it is of the bad DLC Replacement Code, that the game is unable to identify the new DLC Slots (yes same problem with iron slot in new world) -->
+  <ModOp Type="merge" Path="//Values/Objectives/WinConditions/Item/Objective/Values/ConditionQuestObjective[JumpToVisibility='ShowOnlyFakePings']/FakeMinimapPings/Objects/Item[FakeMinimapObjects]/SignsAndFeedback/Values/ConditionObjectiveSignsAndFeedback[ShowMinimapToken='0']">
+    <ShowMinimapToken>1</ShowMinimapToken>
+    <MinimapToken>0</MinimapToken>
+  </ModOp>
 
 </ModOps>

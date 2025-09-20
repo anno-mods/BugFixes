@@ -1,5 +1,5 @@
 {
-  "Version": "1.023",
+  "Version": "1.025",
   "ModID": "Community_Patch",
   "IncompatibleIds": null,
   "DeprecateIds": ["Community_Patch_small","Community_Patch_big"],
@@ -39,6 +39,8 @@
     "1.022" : "Add my new mod 'shared_ItemsetTooltip': Hovering over uncompleted ItemSets in your ItemSet-Overview will show you the buffscope (island or session wide) and buff effects (with buff targets) you will reveice when completing the set (in vanilla you dont see the buffs before completing it). ItemSets changed by mods also display the proper tooltip if loaded before 'shared_ItemsetTooltip_Serp'. To make new mod ItemSets also display the buff, see assets.xml of that shared mod for explanation.\nUpdate 'TooltipBugFixes_Serp': Buffs which add more Resolvers for Incidents now only display that once eg. '+1 Doctor', not 2 times anymore.",
     "1.0221" : "Fix syntax error in my code from latest TooltipBugFixes update (did no harm except not fixing a vanilla bug).",
     "1.0222" : "Update included mod 'Repair All Ruins Key (Serp)' to make sure it does not upgrade buildings to next tier.",
-    "1.023" : "- Update included MoreInfoTooltips mod: \n- - Add BasePrice of Goods to their tooltip on own island/ships and at traders.\n - Fix Vanilla Quest Bug from Quest 152691 ('Cruise Control' by Gasparov): - - After the second escort the Quest suddenly asks to deliver 0t of undefined, which makes no sense. Fixed."
+    "1.023" : "- Update included MoreInfoTooltips mod: \n- - Add BasePrice of Goods to their tooltip on own island/ships and at traders.\n - Fix Vanilla Quest Bug from Quest 152691 ('Cruise Control' by Gasparov): - - After the second escort the Quest suddenly asks to deliver 0t of undefined, which makes no sense. Fixed.",
+    "1.024" : "The game aborts photography quests if one of the objects to photograph is destroyed, even if there are others to photograph. There is no way to prevent this via modding, but at least for story Quest without any timelimit, so it is clear they should never fail, they will be restarted now after 10 seconds, if they got aborted by the system. Affected Quests: 119884,119925,137304,150846,269854",
+    "1.025" : "- Do not allow stacking of the enabled PuckleGun Debuffs.\n- Fix description of some Quest Items.\n- Fix the 'Jump To' mechanic for roughly 30 vanilla quests, so it finally allows you to jump to the target by clicking the Quest."
   }
 }

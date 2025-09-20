@@ -1,6 +1,6 @@
 <ModOps>
        
-
+270174
 
     <!-- Adding GUIDs to various pools they should belong to -->
 
@@ -194,7 +194,7 @@
     
     <ModOp Type="remove" GUID='700151,270174' Path="/Values/AssetPool/AssetList/Item[Probability=720]" Condition="/Values/AssetPool/AssetList/Item[Probability=720]"/>
     
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='720']">
       <Item>
         <Asset>720</Asset>
@@ -206,7 +206,7 @@
         <Asset>720</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='968']">
       <Item>
         <Asset>968</Asset>
@@ -218,7 +218,7 @@
         <Asset>968</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102427']">
       <Item>
         <Asset>102427</Asset>
@@ -230,7 +230,7 @@
         <Asset>102427</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102420']">
       <Item>
         <Asset>102420</Asset>
@@ -242,7 +242,7 @@
         <Asset>102420</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102421']">
       <Item>
         <Asset>102421</Asset>
@@ -254,7 +254,7 @@
         <Asset>102421</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102419']">
       <Item>
         <Asset>102419</Asset>
@@ -266,7 +266,7 @@
         <Asset>102419</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102422']">
       <Item>
         <Asset>102422</Asset>
@@ -278,7 +278,7 @@
         <Asset>102422</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102423']">
       <Item>
         <Asset>102423</Asset>
@@ -290,7 +290,7 @@
         <Asset>102423</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102455']">
       <Item>
         <Asset>102455</Asset>
@@ -302,7 +302,7 @@
         <Asset>102455</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102428']">
       <Item>
         <Asset>102428</Asset>
@@ -314,7 +314,7 @@
         <Asset>102428</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='102425']">
       <Item>
         <Asset>102425</Asset>
@@ -326,7 +326,7 @@
         <Asset>102425</Asset>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID='700151' Path="/Values/AssetPool/AssetList"
+    <ModOp Type="add" GUID='700151,270174' Path="/Values/AssetPool/AssetList"
       Condition="!~/Values/AssetPool/AssetList/Item[Asset='1537']">
       <Item>
         <Asset>1537</Asset>

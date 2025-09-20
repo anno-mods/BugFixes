@@ -204,6 +204,7 @@
           <GUID>1512</GUID>
         </Item>
       </EffectTargets>
+      <AllowStacking>0</AllowStacking>
     </ModOp>
     
     <!-- make the flamethrower items to actually cause fire (like mentioned in description) and be more efficient against wodden ships. also affects the pyro ships from campagin -->
@@ -251,5 +252,21 @@
     <ModOp Type="add" GUID='2001271' Path="/Values/GUIConfig/KeyBindings/Item[Command='game.startMouseMode(24507)']" Condition="/Values/GUIConfig/KeyBindings/Item[Command='game.startMouseMode(24507)' and not(Identifier)]">
       <Identifier>start_tool_skin</Identifier>
     </ModOp>
-
+    
+    
+    <!-- ####### -->
+    
+    <!-- these are not meant to have ItemAction, most likely a copy paste mistake from devs -->
+    <!-- also removes wrong description text -->
+    <ModOp Type="replace" Path="//Values[not(Item/HasAction='1')]/ItemAction[ActionDescription='105524']">
+      <ItemAction />
+    </ModOp>
+    <ModOp Type="replace" Path="//Values[not(Item/HasAction='1')]/ItemAction[ActionDescription='105637']">
+      <ItemAction />
+    </ModOp>
+    <!-- items 191603, 191605,   132092,191450,191451,191609 have ItemAction, but not HasAction=1. -->
+    <!-- I tested them, but they are not worth to enable, its very buggy and there are better alternatives -->
+    <!-- eg. instead of HEAL_INCIDENT/REPAIR better use the Repair Ship from MA-Ships Mod, works better and is more immersive -->
+    <!-- 191609 adds the PuckleGun Debuff to attacks. Not that important and is also missing proper description since game can not display AttackerUpgrade/AddStatusEffects -->
+    
 </ModOps>
