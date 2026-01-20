@@ -1,0 +1,12 @@
+Evtl. den DLCSlotReplacements in <GUID>614</GUID> <Name>season4 random mining slot colony01</Name>
+deaktivieren und stattdessen die Slots und fertilities usw direkt in der Map verwenden, zumindest im DLCEnlarge Map.
+
+Dadurch wird der Bug gefixt dass:
+- Quests nicht auf die Minenslots zeigen können
+- dass der Mod damit man Erze in der neuen Welt durch Forschungspermits ändern kann, auch nach Save Laden weiterhin so bleibt.
+Dabei könnte man den Forschungsmod dann auch direkt im bugfix mod mit aufnehmen.
+
+Verloren geht durch diese Änderung die Möglichkeit vom Retrofitting,  also dass man den DLC
+ nachträglich zu einem Savegame aktiviert. Aber für diesen Fall könnte ich einen separaten Mod anbieten,
+  der diese Änderung wieder rückgängig macht , damit man einmal retrofitten kann. Und dann deaktiviert man das wieder
+   und hat alle vorteile.

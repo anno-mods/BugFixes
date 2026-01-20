@@ -33,6 +33,11 @@
       <!-- <Text>Grand Imperial Trading Post</Text> -->
     <!-- </ModOp> -->
     
+    <!-- 23214 is the text for <UniqueScope>Session</UniqueScope> while in vanilla it mentions island instead -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '23214']/Text">
+      <Text>每个区域只允许建造一栋建筑物。</Text>
+    </ModOp>
+    
     <!-- ############################################### -->
     
     <!-- ItemEffectTargetPool -->

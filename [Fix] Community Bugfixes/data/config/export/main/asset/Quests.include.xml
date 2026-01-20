@@ -79,6 +79,21 @@
       </Item>
     </ModOp>
   
+  <!-- ####################### -->
+  
+  <!-- make optional enbesa Questline (starting with 120372) properly trigger, even if any mod added dried meat production chain to any other session. -->
+  <!-- Vanilla checks if the player built the 3 buildings of this chain anywhere and then tries to start the quest in enbesa. -->
+   <!-- we will add to this check that the dried meat production must be built in enbesa to start the questline -->
+  <ModOp Type="merge" GUID="127553" Path="/Values/Trigger/SubTriggers/Item/SubTrigger/Values/Trigger/TriggerCondition/Values/ConditionPlayerCounter">
+    <CounterScope>Session</CounterScope>
+    <CounterScopeUseCurrentContext>0</CounterScopeUseCurrentContext>
+    <CounterScopeContext>112132</CounterScopeContext>
+  </ModOp>
+  <!-- just the dried meath factory should be enough, no need for the other 2 buildings, to reduce chance that players built them in other sessions and import them -->
+  <ModOp Type="remove" GUID="127553" Path="/Values/Trigger/SubTriggers/Item[SubTrigger/Values/Trigger/TriggerCondition/Values/ConditionPlayerCounter/Context='114439']"></ModOp>
+  <ModOp Type="remove" GUID="127553" Path="/Values/Trigger/SubTriggers/Item[SubTrigger/Values/Trigger/TriggerCondition/Values/ConditionPlayerCounter/Context='114440']"></ModOp>
+  
+  
   <!-- ################################################### -->
   <!-- Uses Serp GUIDS: 1500005526 -->
 
@@ -303,5 +318,62 @@
     <ShowMinimapToken>1</ShowMinimapToken>
     <MinimapToken>0</MinimapToken>
   </ModOp>
+  
+  <!-- ################ -->
+  
+  <ModOp Type="replace" GUID="152628" Path="/Values/Objectives/WinConditions/Item[1]/Objective/Values/ConditionPropsExecutionPlaceSettings">
+    <ConditionPropsExecutionPlaceSettings>
+      <ExecutionPlace>
+        <Template>ConditionObjectAnywhere</Template>
+        <Values>
+          <ConditionObjectAnywhere />
+        </Values>
+      </ExecutionPlace>
+    </ConditionPropsExecutionPlaceSettings>
+  </ModOp>
+  
+  <!-- ################ -->
+  
+  <!-- PreConditionList missing ConditionMutualAreaInSubconditions, to make sure there is an island with all conditions fullfilled -->
+  <!-- But this is not enough... because you still can choose any of your Kontor as destination ConditionObjectPlayerKontor -->
+  <!-- PlayerKontorUseQuestArea -->
+  <!-- hm this alone is not enough to make is QuestArea... -->
+  
+  <!-- <ModOp Type="replace" GUID="119195" Path="/Values/PreConditionList/Condition"> -->
+    <!-- <Condition> -->
+      <!-- <Template>ConditionMutualAreaInSubconditions</Template> -->
+      <!-- <Values> -->
+        <!-- <Condition /> -->
+        <!-- <ConditionMutualAreaInSubconditions /> -->
+      <!-- </Values> -->
+    <!-- </Condition> -->
+  <!-- </ModOp> -->
+  <!-- <ModOp Type="merge" GUID="119195" Path="/Values/Objectives/WinConditions/Item/Objective/Values[ConditionQuestSmuggler]/ConditionPropsExecutionPlaceSettings/ExecutionPlace/Values/ConditionObjectPlayerKontor"> -->
+    <!-- <ConditionObjectPlayerKontor> -->
+      <!-- <PlayerKontorUseQuestArea>1</PlayerKontorUseQuestArea> -->
+    <!-- </ConditionObjectPlayerKontor> -->
+  <!-- </ModOp> -->
+  
+  <!-- ################ -->
+  
+  <!-- Quest can be started in any Session from Smith, but requires you to deal with Kahina and Blake, so its best to always display it.  -->
+   <!-- ok only allow old world for the first quest, which starts the second... -->
+  <ModOp Type="merge" GUID="152481" Path="/Values/Quest">
+    <QuestSessionDependencies />
+  </ModOp>
+  <ModOp Type="add" GUID="152481" Path="/Values/Quest/QuestSessionDependencies">
+    <Item>
+      <SessionOrRegion>180023</SessionOrRegion>
+    </Item>
+  </ModOp>
+  <ModOp Type="merge" GUID="152571" Path="/Values/Quest">
+    <QuestTrackerVisibility>Global</QuestTrackerVisibility>
+  </ModOp>
+  <!-- Allow more spawn points to make it less likely that spawn fails -->
+  <ModOp Type="merge" GUID="152571" Path="/Values/Objectives/WinConditions/Item/Objective/Values/ConditionQuestSmuggler/SmugglerStations/Item/Station/Values/TradingStation/TradingStationDestination/Values/ConditionObjectSpawnedObject[ExecutionObject='100441']/ObjectSpawnArea/Values/SpawnArea">
+    <DistanceToBorder>Near;Mid;Far</DistanceToBorder>
+    <DistanceToIsland>Near;Mid;Far</DistanceToIsland>
+  </ModOp>
+
 
 </ModOps>

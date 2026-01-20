@@ -32,6 +32,11 @@
       <Text>Puesto Comercial Imperial Grande</Text>
     </ModOp>
     
+    <!-- 23214 is the text for <UniqueScope>Session</UniqueScope> while in vanilla it mentions island instead -->
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID = '23214']/Text">
+      <Text>Limitado a uno por regiones</Text>
+    </ModOp>
+    
     <!-- ############################################### -->
     
     <!-- ItemEffectTargetPool -->

@@ -15,6 +15,25 @@
       <!-- </Second_ai_11_Mercier> -->
     <!-- </ModOp> -->
     
+    <!-- add costs of elder residence if not done yet -->
+    <ModOp Type="merge" GUID="114437" Path="/Values/Cost/Costs/Item[Ingredient='114356']" Condition="/Values/Cost/Costs/Item[Ingredient='114356' and not(Amount)]">
+      <Amount>3</Amount>
+    </ModOp>
+    <!-- change heavy factory Motor Assembly Plant to attractivity type Factory instead of Culture -->
+    <ModOp Type="merge" GUID="1010302,5659" Path="/Values">
+      <Culture>
+        <CultureType>Factory</CultureType>
+      </Culture>
+    </ModOp>
+    <!-- <ModOp Type="remove" Path="//Template[text()='Multifactory' or text()=='HeavyFactoryBuilding' or text()=='HeavyFactoryBuilding_Arctic']/../Values/Culture[CultureType='Culture']/CultureType"></ModOp> -->
+    <!-- make the Hacienda buildings do not cause negative attractivness from Multifactory template -->
+    <!-- <ModOp Type="merge" Path="//Template[text()='Multifactory']/../Values/Culture[CultureType='Culture']"> -->
+      <!-- <CultureType>Factory</CultureType> -->
+    <!-- </ModOp> -->
+
+
+    
+    
     
     <!-- Increase the StorageAmount from all Multifactory_Chemical and limit their transporter range to sane amounts -->
       <!-- (at least the Clamp code might be good for nearly every buildings, but we don't want to mess with too many buildings in this bugfix mod, only with the ones where vanilla is critical. Since we dont want to mess with the current build of savegames too much) -->
